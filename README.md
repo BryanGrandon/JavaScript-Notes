@@ -11,6 +11,7 @@ An interpreted programming language used on the client side (front-end) to provi
 - [Data Structure](#data-structure)
 - [Equality comparisons](#equality-comparisons)
 - [Loops](#loops)
+- [Control flow](#control-flow)
 
 ## _Introduction_
 
@@ -226,5 +227,46 @@ label: for (let i = 0; i < 5; i++) {
     console.log(x);
   }
   console.log(i);
+}
+```
+
+## _Control flow_
+
+In JavaScript, the Control flow is a way of how your computer runs code from top to bottom.
+unless it hits any statement that changes the control flow of the program such as loops,
+conditionals, etc.
+
+### [Conditional statements](/code/control-flow/conditional-statements.js)
+
+Conditional statements control behavior in JavaScript and determine whether or not pieces of code can run.
+
+```JS
+if (conditional){
+
+} else if (conditional2){
+
+} else {
+
+}
+
+switch (conditional){
+    case :
+        break;
+    default:
+        break;
+}
+```
+
+### [Exception handling](/code/control-flow/exception-hendling.js)
+
+The code in the try block is executed first, and if it throws an exception, the code in the catch block will be executed.
+
+```JS
+try {
+
+} catch (error){
+
+} finally {
+
 }
 ```
