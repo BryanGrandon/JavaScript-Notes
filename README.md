@@ -12,6 +12,7 @@ An interpreted programming language used on the client side (front-end) to provi
 - [Equality comparisons](#equality-comparisons)
 - [Loops](#loops)
 - [Control flow](#control-flow)
+- [Operator](#operator)
 
 ## _Introduction_
 
@@ -270,3 +271,12 @@ try {
 
 }
 ```
+
+## _[Operator](/code/operator.js)_
+
+Operators allow you to manipulate the value of variables, perform mathematical operations with their values and compare different variables.
+
+- Arithmetic operator
+- Comparison operator
+- Logical operator
+- Ternary operator
