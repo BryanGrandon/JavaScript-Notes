@@ -8,6 +8,7 @@ An interpreted programming language used on the client side (front-end) to provi
 - [All about variables](#all-about-variables)
 - [Data Types](#data-types)
 - [Type casting](#type-casting)
+- [Data Structure](#data-structure)
 
 ## _Introduction_
 
@@ -124,3 +125,36 @@ String();
 Number();
 Boolean();
 ```
+
+## _Data Structure_
+
+A Data structure is a format to organize, manage and store data in a way that allows efficient
+access and modification. JavaScript has primitive (built-in) and non-primitive (not built-in)
+data structures.
+
+### [Array](/code/data-structure/array.js)
+
+The arrays it stores multiple values and elements in one variable.
+
+```JS
+const arrayString = ["Element 1", "Element 2", "Element 3"];
+```
+
+### [Keyed Collection](/code/data-structure/keyed-collection.js)
+
+Keyed collections are data collections that are ordered by key not index. They are associative
+in nature. Map and set objects are keyed collections and are iterable in the order of insertion.
+
+**Map:** Maps are used to store a collection of elements defined by a key and value.
+
+**Set:** Sets allow us to store collections of information, specifically values that will not be repeated.
+
+### [JavaScript Object Notion](/code/data-structure/json.js)
+
+JSON is a lightweight data interchange format, easy to read, write and parse for users and generate for machines.
+
+JSON supports the following data types:
+
+- Objects { ... }.
+- Arrays [ ... ].
+- Primitives type.
