@@ -7,6 +7,7 @@ An interpreted programming language used on the client side (front-end) to provi
 - [Introduction](#introduction)
 - [All about variables](#all-about-variables)
 - [Data Types](#data-types)
+- [Type casting](#type-casting)
 
 ## _Introduction_
 
@@ -99,3 +100,27 @@ Built-in objects, or “global objects”, are those built into the language spe
 - Console object.
 - Date object.
 - Math object.
+
+## _Type casting_
+
+Type conversion (or typecasting) means the transfer of data from one data type to another.
+Implicit conversion happens when the compiler (for compiled languages) or runtime (for script languages like JavaScript) automatically converts data types.
+The source code can also explicitly require a conversion to take place.
+
+```JS
+// -------- Explicit Type Casting -------- //
+
+let number = parseInt("25.5");
+let float = parseFloat("25.5");
+let string = number.toString();
+
+// -------- Implicit Type Casting -------- //
+
+let numberOrString = "4" - "2";
+
+// ------- Type Conversions -------- //
+
+String();
+Number();
+Boolean();
+```
