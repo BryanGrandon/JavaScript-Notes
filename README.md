@@ -14,6 +14,7 @@ An interpreted programming language used on the client side (front-end) to provi
 - [Control flow](#control-flow)
 - [Operator](#operator)
 - [Function](#function)
+- [Strict mode](#strict-mode)
 
 ## _Introduction_
 
@@ -298,3 +299,17 @@ A space or environment in which a particular variable or function can be accesse
 - [Closures](/code/function/closures.js).
 - [Lexical Scoping](/code/function/lexical-scoping.js).
 - [Recursion](/code/function/recursion.js).
+
+## _Strict mode_
+
+Strict mode applies to an entire script or to individual functions. To invoke strict mode on a
+whole script, type exactly "use strict"; before any other expression.
+
+It enforces stricter parsing and error handling on the code at runtime. It also helps you write
+cleaner code and catch errors and bugs that might otherwise go unnoticed.
+
+```JS
+"use strict"
+
+// code
+```
