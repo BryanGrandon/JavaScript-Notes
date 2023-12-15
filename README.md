@@ -15,6 +15,7 @@ An interpreted programming language used on the client side (front-end) to provi
 - [Operator](#operator)
 - [Function](#function)
 - [Strict mode](#strict-mode)
+- [Using (this) keyword](#using-this-keyword)
 
 ## _Introduction_
 
@@ -313,3 +314,18 @@ cleaner code and catch errors and bugs that might otherwise go unnoticed.
 
 // code
 ```
+
+## _[Using (this) keyword](/code/using-this-keyword.js)_
+
+In JavaScript, the this keyword is a little different compared to other languages. It refers to an object, but it depends on how or where it is being invoked. It also has some differences strict mode and non-strict mode.
+
+```JS
+function isAFunction() {
+  console.log(this);
+}
+isAFunction();
+```
+
+- In anonymous function
+- In arrow function
+- Explicit binding
