@@ -9,6 +9,7 @@ An interpreted programming language used on the client side (front-end) to provi
 - [Data Types](#data-types)
 - [Type casting](#type-casting)
 - [Data Structure](#data-structure)
+- [Equality comparisons](#equality-comparisons)
 
 ## _Introduction_
 
@@ -158,3 +159,22 @@ JSON supports the following data types:
 - Objects { ... }.
 - Arrays [ ... ].
 - Primitives type.
+
+## _Equality comparisons_
+
+Comparison operators are used in logical statements to determine equality or
+difference between variables or values.
+
+```JS
+// -------- Is Loosely Equal -------- //
+
+3 == "3" ? console.log(true) : console.log(false);
+
+// -------- Is Strictly Equal -------- //
+
+3 === "3" ? console.log(true) : console.log(false);
+
+// -------- Same Value -------- //
+
+Object.is(3, "3") ? console.log(true) : console.log(false);
+```
