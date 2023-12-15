@@ -10,6 +10,7 @@ An interpreted programming language used on the client side (front-end) to provi
 - [Type casting](#type-casting)
 - [Data Structure](#data-structure)
 - [Equality comparisons](#equality-comparisons)
+- [Loops](#loops)
 
 ## _Introduction_
 
@@ -177,4 +178,53 @@ difference between variables or values.
 // -------- Same Value -------- //
 
 Object.is(3, "3") ? console.log(true) : console.log(false);
+```
+
+## _Loops_
+
+Loops offer a quick and easy way to do something repeatedly.
+
+```JS
+// For
+for (let i = 0; i < 5; i++) {
+    console.log(i)
+}
+
+// Do While
+let value = 0
+do {
+    console.log(value)
+    value += 1
+} while (value > 5);
+
+// While
+while (value < 5) {
+    value += 1
+    console.log(value)
+}
+```
+
+### Iterations
+
+```JS
+// Break //
+for (let i = 0; i < 100; i++) {
+  if (i === 5) break;
+  console.log(i);
+}
+
+// Continue //
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) continue;
+  console.log(i);
+}
+
+// Label //
+label: for (let i = 0; i < 5; i++) {
+  for (let x = 1; x <= 3; x++) {
+    if (x === 3) break label;
+    console.log(x);
+  }
+  console.log(i);
+}
 ```
