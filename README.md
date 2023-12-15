@@ -13,6 +13,7 @@ An interpreted programming language used on the client side (front-end) to provi
 - [Loops](#loops)
 - [Control flow](#control-flow)
 - [Operator](#operator)
+- [Function](#function)
 
 ## _Introduction_
 
@@ -280,3 +281,20 @@ Operators allow you to manipulate the value of variables, perform mathematical o
 - Comparison operator
 - Logical operator
 - Ternary operator
+
+## _[Function](/code/function/function.js)_
+
+Functions exist so that we can reuse code. They are blocks of code that are executed each time
+they are invoked. Each function is usually written to perform a specific task.
+
+- [Function expressions](/code/function/function-expressions.js).
+- [Arrow function](/code/function/arrow-function.js).
+- [IIFE](/code/function/iife.js).
+
+### Scope and Function stack
+
+A space or environment in which a particular variable or function can be accessed or used. Accessibility of this variable or function depends on where it is defined.
+
+- [Closures](/code/function/closures.js).
+- [Lexical Scoping](/code/function/lexical-scoping.js).
+- [Recursion](/code/function/recursion.js).
