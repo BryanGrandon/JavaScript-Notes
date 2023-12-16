@@ -18,6 +18,7 @@ An interpreted programming language used on the client side (front-end) to provi
 - [Using (this) keyword](#using-this-keyword)
 - [Asynchronous JavaScript](#asynchronous-javascript)
 - [Classes](#classes)
+- [Generator](#generator)
 
 ## _Introduction_
 
@@ -490,3 +491,18 @@ class Staff extends Human {
 
 - Protected properties are usually prefixed with the underscore \_.
 - Privates should start with #. They are only accessible from inside the class.
+
+## _[Generator](/code/generator.js)_
+
+Iterators are objects, governed by the iterator protocol, that allow us to easily iterate
+over a given sequence in a variety of ways, such as using the for...of loop.
+
+```JS
+function* generateSequence() {
+  yield 1;
+  yield 2;
+  return 3;
+}
+let generator = generateSequence();
+console.log(generator);
+```
