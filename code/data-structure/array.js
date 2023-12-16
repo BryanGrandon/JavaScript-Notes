@@ -2,41 +2,24 @@ const arrayString = ["Apple", "Banana", "Orange"];
 
 const accessArray = {
   start: arrayString[0],
-  end: accessArray.at(-1),
+  end: arrayString.at(-1),
 };
+console.log(accessArray);
 
 arrayString[1] = "Lemon"; // Rename or Replace
 
 let numberOfElements = arrayString.length;
 const otherArray = [true, { name: "Andres" }, 32];
 
-// Array Methods //
+// Destructuring
 
-array = [1, 2, 3, 4];
+const array = ["element 1", "element 2"];
+let [element_1, element_2] = array;
+console.log(element_1, element_2);
 
-const arrayMethods = {
-  delete: {
-    start: array.shift(),
-    end: array.pop(),
-  },
-  add: {
-    start: array.unshift(0),
-    end: array.push(5),
-  },
+let [one, two, three] = new Set([1, 2, 3]);
+console.log(one, two, three);
 
-  Map: array.map((x) => x + 10),
-  filter: array.filter((x) => x > 3),
-
-  forEach: array.forEach((e, i) => {
-    console.log(`${e} index: ${i} `);
-  }),
-
-  some: array.some((x) => x > 3),
-  every: array.every((x) => x > 3),
-};
-
-const order = [1, 3, 2, 4, 6, 5];
-const arrOrder = order.sort((a, b) => (a > b ? 1 : -1));
-const arrOrder2 = order.sort((a, b) => (a > b ? -1 : 1));
-
-const reverse = array.reverse();
+// ...
+let [name1, name2, ...others] = ["Bryan", "Andres", "Harry", "Sofia"];
+console.log(others);

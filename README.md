@@ -19,6 +19,8 @@ An interpreted programming language used on the client side (front-end) to provi
 - [Asynchronous JavaScript](#asynchronous-javascript)
 - [Classes](#classes)
 - [Generator](#generator)
+- [Modules](#modules)
+- []
 
 ## _Introduction_
 

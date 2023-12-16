@@ -39,3 +39,18 @@ let cloneObjectAndProperties = Object.defineProperties(
   {},
   Object.getOwnPropertyDescriptors(object)
 );
+
+// -------- Destructuring -------- //
+
+let options = {
+  title: "Menu",
+  width: 100,
+  height: 200,
+};
+
+let { title, width, height } = options;
+console.log(title);
+
+for (let [key, value] of Object.entries(options)) {
+  console.log(`${key}: ${value}`);
+}
