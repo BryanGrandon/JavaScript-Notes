@@ -16,6 +16,7 @@ An interpreted programming language used on the client side (front-end) to provi
 - [Function](#function)
 - [Strict mode](#strict-mode)
 - [Using (this) keyword](#using-this-keyword)
+- [Asynchronous JavaScript](#asynchronous-javascript)
 
 ## _Introduction_
 
@@ -329,3 +330,118 @@ isAFunction();
 - In anonymous function
 - In arrow function
 - Explicit binding
+
+## _Asynchronous JavaScript_
+
+Asynchronous programming is a technique that enables your program to start a potentially
+long-running task and still be able to be responsive to other events while that task runs,
+rather than having to wait until that task has finished.
+
+### setTimeout
+
+The setTimeout runs a function after the specified period expires.
+Times are declared in milliseconds.
+
+```JS
+// setTimeout (func|code, [delay], [arg1], [arg2], ...)
+const func1 = (user) => console.log(`Hello ${user}`);
+let timerFunc1 = setTimeout(func1, 1000, "variable");
+clearTimeout(timerFunc1);
+
+let timer = setTimeout((user)=> {
+  console.log(`Bye ${user}`)
+}, 1000, user)
+```
+
+### setInterval
+
+setInterval() is similar to setTimeout, with one difference. Instead of executing the callback
+function once, it will execute it forever, at the specified time interval
+
+```JS
+let timerInterval = setInterval(() => {
+  console.log("tick");
+}, 2000);
+
+setTimeout(() => {
+  clearInterval(timerInterval);
+  console.log("Stop");
+}, 7000);
+```
+
+### Event Loop
+
+**Synchronous:** The synchronous operation you wait for the result.. <br>
+**Asynchronous:** The asynchronous operation does not wait for the result.
+
+```JS
+console.log(1);
+
+setTimeout(() => { console.log(2);
+}, 0);
+
+console.log(3);
+// execution order -> 1, 3, 2
+```
+
+### [Callback](/code/asynchronous/callback.js)
+
+A callback function is a function passed into another function as an argument,
+which is then invoked inside the outer function to complete some kind of routine or action.
+
+```JS
+function greet(name){
+  console.log(`Hello ${name}`)
+}
+function users(callback){
+  let name = "bryan"
+  callback(name)
+}
+users(greet)
+```
+
+### [Promise](/code/asynchronous/promise.js)
+
+Promises are a much better way to work with asynchronous code in JavaScript than
+the old and error-prone callback approach.
+
+```JS
+const callAnAPI = () => {
+  return { data: "API" };
+};
+const promise = new Promise((resolve, reject) => {
+  const data = callAnAPI();
+  if (data) {
+    resolve(data);
+  } else {
+    reject(Error("An error occurred"));
+  }
+});
+promise
+  .then((data) => {
+    // Use the data
+    console.log("the data is:", data);
+  })
+  .catch((error) => {
+    // Handle the error
+    console.error(error);
+  });
+```
+
+### [Async / Await](/code/asynchronous/async-await.js)
+
+async/await is a special syntax to work with promises in a more comfortable fashion.
+We use async keyword to declare a async function that return a Promise, and the await keyword
+makes a function wait for a Promise.
+
+```JS
+async function asynchronousFunction() {
+  try {
+    console.log("Start Async Function");
+
+    // await -> wait for the result
+    let obj = await elevationPromise(0);
+    console.log(`Async Function: ${obj.value}, ${obj.result}`);
+  }
+}
+```
