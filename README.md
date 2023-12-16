@@ -17,6 +17,7 @@ An interpreted programming language used on the client side (front-end) to provi
 - [Strict mode](#strict-mode)
 - [Using (this) keyword](#using-this-keyword)
 - [Asynchronous JavaScript](#asynchronous-javascript)
+- [Classes](#classes)
 
 ## _Introduction_
 
@@ -445,3 +446,47 @@ async function asynchronousFunction() {
   }
 }
 ```
+
+## _[Classes](/code/classes/classes.js)_
+
+Classes are a template for creating objects. They encapsulate data with code to work on that data.
+
+```JS
+class MyClass {
+  constructor() {}
+  method1() {}
+  method2() {}
+}
+```
+
+### [Getter Setter](/code/classes/getter-setter.js)
+
+- Getter, the code executed to get obj.propName
+- Setter, the code executed to set obj.propName = value
+
+```JS
+get fullName() {
+    return `${this.name} ${this.lastName}`;
+  },
+
+set fullName(value) {
+  [this.name, this.lastName] = value.split(" ");
+},
+```
+
+### [Inheritance](/code/classes/inheritance.js)
+
+```JS
+class Staff extends Human {
+  constructor(country, language, name, age) {
+    super(country, language); // Human constructor element
+    this.name = name;
+    this.age = age;
+  }
+}
+```
+
+### [Additional](/code/classes/additional.js)
+
+- Protected properties are usually prefixed with the underscore \_.
+- Privates should start with #. They are only accessible from inside the class.
