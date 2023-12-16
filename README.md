@@ -506,3 +506,63 @@ function* generateSequence() {
 let generator = generateSequence();
 console.log(generator);
 ```
+
+## _Modules_
+
+Modules encapsulate all sorts of code like functions and variables and expose all this to other files.
+
+### Export
+
+**Named:** The name of the imported data is the one that allows us to import it to another file.
+There may be multiple exports.
+
+```JS
+let variable = "variable";
+const array = [1, 2, 3, 4];
+const object = {
+  id: 1,
+  user: "Bryan",
+  email: "@gmail.com",
+};
+function forExport() {
+  console.log(`Function Exported`);
+}
+export {variable, object, array, forExport}
+```
+
+**Default:** There can only be one export default.
+Note that it is not possible to use var, let, or const with export default.
+
+```JS
+export default function forExportDefault() {
+  console.log(`Export Default`);
+}
+```
+
+### Import
+
+The import() syntax, commonly called dynamic import, is a function-like expression that allows loading an ECMAScript modules asynchronously and dynamically into a potentially non-module environment.
+
+```JS
+// Export Default
+import forExportDefault, {
+  // Export
+  array,
+  forExport,
+  object,
+  variable,
+} from "./export.js";
+
+// Export
+const obj = object;
+console.log(obj);
+let data = variable;
+console.log(data);
+const arr = array;
+console.log(arr);
+forExport("Bryan");
+
+// Export Default
+forExportDefault();
+
+```
