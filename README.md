@@ -20,7 +20,7 @@ An interpreted programming language used on the client side (front-end) to provi
 - [Classes](#classes)
 - [Generator](#generator)
 - [Modules](#modules)
-- []
+- [DOM](/DOM/dom.md)
 
 ## _Introduction_
 
