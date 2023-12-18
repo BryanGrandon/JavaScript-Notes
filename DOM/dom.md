@@ -5,6 +5,7 @@ In Javascript, when we refer to the **_Document Object Model_** ( DOM ) we refer
 ## _Table of content_
 
 - [The subject document](#the-subject-document)
+- [Select DOM element](#select-dom-element)
 
 ## _The subject document_
 
@@ -29,4 +30,21 @@ const form = document.form;
 // css and js
 const css = document.styleSheets;
 const js = document.scripts;
+```
+
+## _Select DOM element_
+
+There are a number of methods that allow us to search the DOM of the page and find these elements.
+
+```JS
+// ID
+const $id = document.getElementById("id");
+
+// CLASS
+const $class = document.querySelector(".class");
+const $allClass = document.querySelectorAll(".class");
+
+// Tags html
+const $div = document.querySelector("div");
+const $allDiv = document.querySelectorAll("div");
 ```
