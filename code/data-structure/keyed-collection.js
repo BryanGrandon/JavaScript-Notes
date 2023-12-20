@@ -1,4 +1,5 @@
 // -------- Map -------- //
+// Maps are used to store a collection of elements defined by a key and value.
 
 const map = new Map();
 
@@ -19,6 +20,7 @@ let object = { name: "Bryan" }; // Define the Value and the key has to be an obj
 weakMap.set(object, "...");
 
 // -------- Set -------- //
+// Sets allow us to store collections of information, specifically values that will not be repeated.
 
 const set = new Set();
 

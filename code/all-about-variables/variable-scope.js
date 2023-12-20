@@ -1,4 +1,5 @@
 // -------- Global Scope -------- //
+// It can be accessed from anywhere within the same JavaScript code.
 
 var global = "Global scope";
 {
@@ -6,6 +7,7 @@ var global = "Global scope";
 }
 
 // -------- Function scope -------- //
+// Variables declared inside a function can only be used.
 
 function hi(name) {
   let greet = `Hello `;
@@ -14,6 +16,7 @@ function hi(name) {
 console.log(greet);
 
 // -------- Block scope -------- //
+// Variables declared within a block cannot be accessed outside.
 
 let block = "Block scope 1";
 {

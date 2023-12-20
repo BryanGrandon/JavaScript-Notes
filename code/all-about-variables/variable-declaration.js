@@ -7,7 +7,7 @@ x = 12;
 console.log(x); // 12
 
 // -------- Let -------- //
-// The keyword var defines a variable with global scope.
+// The let statement declares a locally scoped variable with block scope.
 
 let y = "Hello";
 y = 21;

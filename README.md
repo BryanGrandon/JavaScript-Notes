@@ -32,13 +32,11 @@ To store and represent this information in the JavaScript codebase, we use varia
 
 ### [Variable Declaration](/code/all-about-variables/variable-declaration.js)
 
-To use variables in JavaScript, you need to declare them using one of the keywords `var`, `let`, `const`
+To use variables in JavaScript, you need to declare them using one of the keywords.
 
-```JS
-var nameVar = "Value Var";
-let nameLet = "Value Let";
-const nameConst = "Value Const";
-```
+- `Var`.
+- `Let`.
+- `Const`.
 
 ### Hoisting
 
@@ -46,19 +44,16 @@ JavaScript Hoisting refers to the process whereby the interpreter appears
 to move the declaration of functions, variables, or classes to the top
 of their scope, prior to execution of the code.
 
-**Lexical environment:** Stores variables and functions in memory.
-
-**Temporal Dead Zone:** Cannot access "variables" before initialization.
+- Lexical environment.
+- Temporal Dead Zone.
 
 ### [Variable Scope](/code/all-about-variables/variable-scope.js)
 
 In JavaScript, scope refers to the visibility of a variable or how it can be used after it is declared. The scope of a variable depends on the keyword that was used to declare it.
 
-**Global Scope:** It can be accessed from anywhere within the same JavaScript code.
-
-**Function scope:** Variables declared inside a function can only be used.
-
-**Block scope:** Variables declared within a block cannot be accessed outside.
+- Global Scope.
+- Function Scope.
+- Block Scope.
 
 ## _Data Types_
 
@@ -69,31 +64,13 @@ Data type refers to the type of data that a JavaScript variable can hold.
 In JavaScript, a primitive value is a data that is not an object and has no methods or properties. <br />
 There are 7 primitive data types.
 
-```JS
-let x;
-
-// String
-x = "Text";
-
-// Number
-x = 21;
-
-// bigInt
-x = 210n;
-
-// boolean
-x = true;
-x = false;
-
-// Null
-x = null;
-
-// Undefined
-x = undefined;
-
-// Symbol
-x = Symbol("id")
-```
+- String
+- Number
+- bigInt
+- Boolean
+- Null
+- Undefined
+- Symbol
 
 ### [Object](/code/data-type/object.js)
 
@@ -114,29 +91,15 @@ Built-in objects, or “global objects”, are those built into the language spe
 - Date object.
 - Math object.
 
-## _Type casting_
+## _[Type casting](/code/type-casting.js_)
 
 Type conversion (or typecasting) means the transfer of data from one data type to another.
 Implicit conversion happens when the compiler (for compiled languages) or runtime (for script languages like JavaScript) automatically converts data types.
 The source code can also explicitly require a conversion to take place.
 
-```JS
-// -------- Explicit Type Casting -------- //
-
-let number = parseInt("25.5");
-let float = parseFloat("25.5");
-let string = number.toString();
-
-// -------- Implicit Type Casting -------- //
-
-let numberOrString = "4" - "2";
-
-// ------- Type Conversions -------- //
-
-String();
-Number();
-Boolean();
-```
+- Explicit Type Casting.
+- Implicit Type Casting.
+- Type Conversions.
 
 ## _Data Structure_
 
@@ -157,9 +120,10 @@ const arrayString = ["Element 1", "Element 2", "Element 3"];
 Keyed collections are data collections that are ordered by key not index. They are associative
 in nature. Map and set objects are keyed collections and are iterable in the order of insertion.
 
-**Map:** Maps are used to store a collection of elements defined by a key and value.
-
-**Set:** Sets allow us to store collections of information, specifically values that will not be repeated.
+- Map.
+- weakMap.
+- Set.
+- weakMap.
 
 ### [JavaScript Object Notion](/code/data-structure/json.js)
 
@@ -176,68 +140,23 @@ JSON supports the following data types:
 Comparison operators are used in logical statements to determine equality or
 difference between variables or values.
 
-```JS
-// -------- Is Loosely Equal -------- //
+- Is Loosely Equal ( `==` )
+- Is Strictly Equal ( `===` )
+- Same Value ( `Object.is()` )
 
-3 == "3" ? console.log(true) : console.log(false);
-
-// -------- Is Strictly Equal -------- //
-
-3 === "3" ? console.log(true) : console.log(false);
-
-// -------- Same Value -------- //
-
-Object.is(3, "3") ? console.log(true) : console.log(false);
-```
-
-## _Loops_
+## _[Loops](/code/loops/loops.js)_
 
 Loops offer a quick and easy way to do something repeatedly.
 
-```JS
-// For
-for (let i = 0; i < 5; i++) {
-    console.log(i)
-}
+- For.
+- Do while.
+- While.
 
-// Do While
-let value = 0
-do {
-    console.log(value)
-    value += 1
-} while (value > 5);
+### [Iterations](/code/loops/iterations.js)
 
-// While
-while (value < 5) {
-    value += 1
-    console.log(value)
-}
-```
-
-### Iterations
-
-```JS
-// Break //
-for (let i = 0; i < 100; i++) {
-  if (i === 5) break;
-  console.log(i);
-}
-
-// Continue //
-for (let i = 1; i <= 5; i++) {
-  if (i === 3) continue;
-  console.log(i);
-}
-
-// Label //
-label: for (let i = 0; i < 5; i++) {
-  for (let x = 1; x <= 3; x++) {
-    if (x === 3) break label;
-    console.log(x);
-  }
-  console.log(i);
-}
-```
+- Break.
+- Continue.
+- Label
 
 ## _Control flow_
 
@@ -249,36 +168,18 @@ conditionals, etc.
 
 Conditional statements control behavior in JavaScript and determine whether or not pieces of code can run.
 
-```JS
-if (conditional){
-
-} else if (conditional2){
-
-} else {
-
-}
-
-switch (conditional){
-    case :
-        break;
-    default:
-        break;
-}
-```
+- If
+- Else if
+- Else
+- Switch
 
 ### [Exception handling](/code/control-flow/exception-hendling.js)
 
 The code in the try block is executed first, and if it throws an exception, the code in the catch block will be executed.
 
-```JS
-try {
-
-} catch (error){
-
-} finally {
-
-}
-```
+- Try
+- Catch (error)
+- Finally
 
 ## _[Operator](/code/operator.js)_
 
@@ -316,20 +217,12 @@ cleaner code and catch errors and bugs that might otherwise go unnoticed.
 
 ```JS
 "use strict"
-
 // code
 ```
 
 ## _[Using (this) keyword](/code/using-this-keyword.js)_
 
 In JavaScript, the this keyword is a little different compared to other languages. It refers to an object, but it depends on how or where it is being invoked. It also has some differences strict mode and non-strict mode.
-
-```JS
-function isAFunction() {
-  console.log(this);
-}
-isAFunction();
-```
 
 - In anonymous function
 - In arrow function
@@ -341,36 +234,21 @@ Asynchronous programming is a technique that enables your program to start a pot
 long-running task and still be able to be responsive to other events while that task runs,
 rather than having to wait until that task has finished.
 
-### setTimeout
+### [setTimeout](/code/asynchronous/settimerout.js)
 
 The setTimeout runs a function after the specified period expires.
 Times are declared in milliseconds.
 
 ```JS
 // setTimeout (func|code, [delay], [arg1], [arg2], ...)
-const func1 = (user) => console.log(`Hello ${user}`);
-let timerFunc1 = setTimeout(func1, 1000, "variable");
-clearTimeout(timerFunc1);
-
-let timer = setTimeout((user)=> {
-  console.log(`Bye ${user}`)
-}, 1000, user)
 ```
 
-### setInterval
+### [setInterval](/code/asynchronous/setinterval.js)
 
-setInterval() is similar to setTimeout, with one difference. Instead of executing the callback
-function once, it will execute it forever, at the specified time interval
+setInterval() is similar to setTimeout, with one difference. Instead of executing the callback function once, it will execute it forever, at the specified time interval
 
 ```JS
-let timerInterval = setInterval(() => {
-  console.log("tick");
-}, 2000);
-
-setTimeout(() => {
-  clearInterval(timerInterval);
-  console.log("Stop");
-}, 7000);
+// setInterval (func|code, [delay], [arg1], [arg2], ...)
 ```
 
 ### Event Loop
@@ -378,89 +256,24 @@ setTimeout(() => {
 **Synchronous:** The synchronous operation you wait for the result.. <br>
 **Asynchronous:** The asynchronous operation does not wait for the result.
 
-```JS
-console.log(1);
-
-setTimeout(() => { console.log(2);
-}, 0);
-
-console.log(3);
-// execution order -> 1, 3, 2
-```
-
 ### [Callback](/code/asynchronous/callback.js)
 
 A callback function is a function passed into another function as an argument,
 which is then invoked inside the outer function to complete some kind of routine or action.
-
-```JS
-function greet(name){
-  console.log(`Hello ${name}`)
-}
-function users(callback){
-  let name = "bryan"
-  callback(name)
-}
-users(greet)
-```
 
 ### [Promise](/code/asynchronous/promise.js)
 
 Promises are a much better way to work with asynchronous code in JavaScript than
 the old and error-prone callback approach.
 
-```JS
-const callAnAPI = () => {
-  return { data: "API" };
-};
-const promise = new Promise((resolve, reject) => {
-  const data = callAnAPI();
-  if (data) {
-    resolve(data);
-  } else {
-    reject(Error("An error occurred"));
-  }
-});
-promise
-  .then((data) => {
-    // Use the data
-    console.log("the data is:", data);
-  })
-  .catch((error) => {
-    // Handle the error
-    console.error(error);
-  });
-```
-
 ### [Async / Await](/code/asynchronous/async-await.js)
 
 async/await is a special syntax to work with promises in a more comfortable fashion.
-We use async keyword to declare a async function that return a Promise, and the await keyword
-makes a function wait for a Promise.
-
-```JS
-async function asynchronousFunction() {
-  try {
-    console.log("Start Async Function");
-
-    // await -> wait for the result
-    let obj = await elevationPromise(0);
-    console.log(`Async Function: ${obj.value}, ${obj.result}`);
-  }
-}
-```
+We use async keyword to declare a async function that return a Promise, and the await keyword makes a function wait for a Promise.
 
 ## _[Classes](/code/classes/classes.js)_
 
 Classes are a template for creating objects. They encapsulate data with code to work on that data.
-
-```JS
-class MyClass {
-  constructor() {}
-  method1() {}
-  method2() {}
-}
-```
 
 ### [Getter Setter](/code/classes/getter-setter.js)
 
@@ -479,15 +292,7 @@ set fullName(value) {
 
 ### [Inheritance](/code/classes/inheritance.js)
 
-```JS
-class Staff extends Human {
-  constructor(country, language, name, age) {
-    super(country, language); // Human constructor element
-    this.name = name;
-    this.age = age;
-  }
-}
-```
+In programming, inheritance refers to passing down characteristics from a parent to a child so that a new piece of code can reuse and build upon the features of an existing one.
 
 ### [Additional](/code/classes/additional.js)
 
@@ -499,16 +304,6 @@ class Staff extends Human {
 Iterators are objects, governed by the iterator protocol, that allow us to easily iterate
 over a given sequence in a variety of ways, such as using the for...of loop.
 
-```JS
-function* generateSequence() {
-  yield 1;
-  yield 2;
-  return 3;
-}
-let generator = generateSequence();
-console.log(generator);
-```
-
 ## _Modules_
 
 Modules encapsulate all sorts of code like functions and variables and expose all this to other files.
@@ -519,17 +314,15 @@ Modules encapsulate all sorts of code like functions and variables and expose al
 There may be multiple exports.
 
 ```JS
-let variable = "variable";
 const array = [1, 2, 3, 4];
 const object = {
-  id: 1,
   user: "Bryan",
   email: "@gmail.com",
 };
 function forExport() {
   console.log(`Function Exported`);
 }
-export {variable, object, array, forExport}
+export {object, array, forExport}
 ```
 
 **Default:** There can only be one export default.
@@ -555,16 +348,8 @@ import forExportDefault, {
   variable,
 } from "./export.js";
 
-// Export
 const obj = object;
-console.log(obj);
-let data = variable;
-console.log(data);
-const arr = array;
-console.log(arr);
-forExport("Bryan");
 
 // Export Default
 forExportDefault();
-
 ```
