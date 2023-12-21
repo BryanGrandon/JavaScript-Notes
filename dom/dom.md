@@ -13,3 +13,11 @@ The Document interface represents any web page loaded in the browser and serves 
 - Document
 - HTML tags
 - External document
+
+## _[Select DOM element](/dom/code/select-dom-element.js)_
+
+There are a number of methods that allow us to search the DOM of the page and find these elements.
+
+- getElementById()
+- querySelector()
+- querySelectorAll()
