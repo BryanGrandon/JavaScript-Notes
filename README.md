@@ -2,6 +2,8 @@
 
 An interpreted programming language used on the client side (front-end) to provide dynamic and interactive enhancements to web pages.
 
+- [DOM](/dom/dom.md)
+
 ## _Table of content_
 
 - [Introduction](#introduction)
@@ -20,7 +22,6 @@ An interpreted programming language used on the client side (front-end) to provi
 - [Classes](#classes)
 - [Generator](#generator)
 - [Modules](#modules)
-- [DOM](/DOM/dom.md)
 
 ## _Introduction_
 
