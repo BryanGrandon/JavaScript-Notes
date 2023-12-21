@@ -5,6 +5,8 @@ In Javascript, when we refer to the Document Object Model ( DOM ) we refer to th
 ## _Table of content_
 
 - [Document](#document)
+- [Select DOM element](#select-dom-element)
+- [Manage DOM attributes](#manager-dom-attributes)
 
 ## _[Document](/dom/code/document.js)_
 
@@ -21,3 +23,12 @@ There are a number of methods that allow us to search the DOM of the page and fi
 - getElementById()
 - querySelector()
 - querySelectorAll()
+
+## _[Manager DOM attributes](/dom/code/manage-dom-attribute.js)_
+
+All attributes are accessible by using the following methods:
+
+- hasAttribute(attr)
+- getAttribute(attr)
+- setAttribute(attr, value)
+- removeAttribute(attr)
