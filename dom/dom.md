@@ -9,6 +9,7 @@ In Javascript, when we refer to the Document Object Model ( DOM ) we refer to th
 - [Manage DOM attributes](#manager-dom-attributes)
 - [Styles and classes](#styles-and-classes)
 - [Insert element in DOM](#insert-element-in-dom)
+- [Walking the DOM](#walking-the-dom)
 
 ## _[Document](/dom/code/document.js)_
 
@@ -68,3 +69,11 @@ The different ways to insert text from JavaScript to HTML.
 - textContent
 - innerHTML
 - outerHTML
+
+## _[Walking the DOM](/dom/code/walking-the-dom.js)_
+
+The DOM allows us to do anything with elements and their contents, bt first we need to reach the corresponding DON object.
+
+- Children
+- Brother
+- Get nearest parent element
