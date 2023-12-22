@@ -8,6 +8,7 @@ In Javascript, when we refer to the Document Object Model ( DOM ) we refer to th
 - [Select DOM element](#select-dom-element)
 - [Manage DOM attributes](#manager-dom-attributes)
 - [Styles and classes](#styles-and-classes)
+- [Insert element in DOM](#insert-element-in-dom)
 
 ## _[Document](/dom/code/document.js)_
 
@@ -58,3 +59,12 @@ To get and set the variables with JavaScript, we can use various methods.
 - setProperty( property-css, value )
 - getComputedStyle( element )
 - getPropertyValue( property-css )
+
+## _[Insert element in DOM](/dom/code/insert-element-in-dom.js)_
+
+The different ways to insert text from JavaScript to HTML.
+
+- innerText
+- textContent
+- innerHTML
+- outerHTML
