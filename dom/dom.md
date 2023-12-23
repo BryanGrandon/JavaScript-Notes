@@ -115,3 +115,15 @@ Events are signals fired inside the browser window that notify of changes in the
 - Event whit parameter
 - Remove event
 - Event delegation
+
+## _[Browser Object Model](/dom/code/bom.js)_
+
+The Browser Object Model ( BOM ) is a collection of objects exposed by the browser that allow JavaScript to interact with the browser window, document, and other browser-specific functionalities.
+
+- resize
+- scroll
+- load
+- DOMContentLoaded
+- LocationURL
+- historyObj
+- navigatorObj
