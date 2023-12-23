@@ -12,6 +12,7 @@ In Javascript, when we refer to the Document Object Model ( DOM ) we refer to th
 - [Walking the DOM](#walking-the-dom)
 - [Create element in the DOM](#create-element-in-the-dom)
 - [Modifying elements](#modifying-elements)
+- [Event handler](#event-handler)
 
 ## _[Document](/dom/code/document.js)_
 
@@ -103,3 +104,14 @@ There are a number of methods for efficiently creating different HTML elements o
   - Next brother ( afterend )
   - First son ( afterbegin )
   - Last son ( beforeend )
+
+## _[Event handler](/dom/code/event-handler.js)_
+
+Events are signals fired inside the browser window that notify of changes in the browser or operating system environment. Programmers can create event handler code that will run when an event fires, allowing web pages to respond appropriately to change.
+
+- Event whit attribute (onclick="" in HTML)
+- Event with semantic handler
+- Multiple events
+- Event whit parameter
+- Remove event
+- Event delegation
