@@ -10,6 +10,7 @@ In Javascript, when we refer to the Document Object Model ( DOM ) we refer to th
 - [Styles and classes](#styles-and-classes)
 - [Insert element in DOM](#insert-element-in-dom)
 - [Walking the DOM](#walking-the-dom)
+- [Create element in the DOM](#create-element-in-the-dom)
 
 ## _[Document](/dom/code/document.js)_
 
@@ -77,3 +78,13 @@ The DOM allows us to do anything with elements and their contents, bt first we n
 - Children
 - Brother
 - Get nearest parent element
+
+## _[Create element in the DOM](/dom/code/create-element-in-the-dom.js)_
+
+There are a number of methods for efficiently creating different HTML elements or nodes.
+
+- createElement()
+- createTextNode()
+- appendChild()
+- createDocumentFragment()
+- importNode
