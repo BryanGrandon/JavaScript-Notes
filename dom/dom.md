@@ -11,6 +11,7 @@ In Javascript, when we refer to the Document Object Model ( DOM ) we refer to th
 - [Insert element in DOM](#insert-element-in-dom)
 - [Walking the DOM](#walking-the-dom)
 - [Create element in the DOM](#create-element-in-the-dom)
+- [Modifying elements](#modifying-elements)
 
 ## _[Document](/dom/code/document.js)_
 
@@ -88,3 +89,17 @@ There are a number of methods for efficiently creating different HTML elements o
 - appendChild()
 - createDocumentFragment()
 - importNode
+
+## _Modifying elements_
+
+- .insertAdjacentElement( position, element )
+
+- .insertAdjacentHTML( position, html )
+
+- .insertAdjacentText( position, text )
+
+- Position :
+  - Previous brother ( beforebegin )
+  - Next brother ( afterend )
+  - First son ( afterbegin )
+  - Last son ( beforeend )
