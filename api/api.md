@@ -5,6 +5,7 @@ Application Programming Interface ( API ) is a piece of code that allows differe
 ## _Table of content_
 
 - [AJAX](#asynchronous-javascript-and-xml)
+- [REST](#representational-state-transfer)
 
 ## _Asynchronous JavaScript And XML_
 
@@ -24,7 +25,34 @@ Promise-based library for making requests in Node or in browsers.
 
 ```HTML
 <head>
-    <!-- Axios -->
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js" defer></script>
+  <!-- Axios -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"
+    defer
+  ></script>
 </head>
 ```
+
+## _Representational State Transfer_
+
+The REST service is a set of constraints with which we can create a software architecture style, which we can use to create web applications respecting the HTTP protocol.
+
+Initialize the folder to be used.
+
+```bash
+npm init -y
+```
+
+Install dependencies.
+
+```bash
+npm install -S express
+```
+
+To execute the API we use node
+
+```bash
+node .\api.js
+```
+
+Use the [rapidAPI client](https://marketplace.visualstudio.com/items?itemName=RapidAPI.vscode-rapidapi-client) extension to send requests.
