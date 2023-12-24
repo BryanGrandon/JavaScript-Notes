@@ -3,6 +3,7 @@
 An interpreted programming language used on the client side (front-end) to provide dynamic and interactive enhancements to web pages.
 
 - [DOM](/dom/dom.md)
+- [API](/api/api.md)
 
 ## _Table of content_
 
