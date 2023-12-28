@@ -28,6 +28,11 @@ An interpreted programming language used on the client side (front-end) to provi
 
 This project is to have a record of what i have learned about JavaScript.
 
+### Related website
+
+- [JavaScript.info](https://javascript.info/)
+- [iHateRegex](https://ihateregex.io/)
+
 ## _All about variables_
 
 To store and represent this information in the JavaScript codebase, we use variables. A variable is a container for a value.
