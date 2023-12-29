@@ -4,6 +4,7 @@ An interpreted programming language used on the client side (front-end) to provi
 
 - [DOM](/dom/dom.md)
 - [API](/api/api.md)
+- [Projects](/projects/projects.md)
 
 ## _Table of content_
 
