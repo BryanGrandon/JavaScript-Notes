@@ -5,6 +5,7 @@ The best way to learn something is to put it into practice through projects.
 ## _Table of content_
 
 - [Navbar](#navbar)
+- [Network status](#network-status)
 
 ## _Navbar_
 
@@ -55,15 +56,32 @@ We will use CSS in addition to styling the web page. It will have a functionalit
   height: auto;
   padding: 1rem 0;
 }
-@media (max-width: 992px) {
-.dropdown-menu{
-    display: block;
+```
+
+## _[Network status](/projects/network-status/)_
+
+Network status allows us to visually show the user that they have lost their connection to the network or when the connection is restored to the network
+
+We will use JavaScript to create the section that will be displayed in the HTML to indicate the connection status.
+
+```JS
+const isOnline = () => {
+  const $section = document.createElement("section");
+  $section.classList.add("status");
+
+  if (navigator.onLine) {
+    $section.textContent = `Connection restored`;
+    $section.classList.remove("offline");
+    $section.classList.add("online");
+  } else {
+    $section.textContent = `Lost connection`;
+    $section.classList.remove("online");
+    $section.classList.add("offline");
   }
-}
-@media (max-width: 576px) {
-  .dropdown_menu {
-    left: 2rem;
-    width: unset;
-  }
-}
+  document.body.insertAdjacentElement("afterbegin", $section);
+
+  setTimeout(() => document.body.removeChild($section), 1000);
+};
+window.addEventListener("online", (e) => isOnline());
+window.addEventListener("offline", (e) => isOnline());
 ```
