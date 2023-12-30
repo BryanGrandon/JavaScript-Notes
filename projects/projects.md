@@ -6,6 +6,7 @@ The best way to learn something is to put it into practice through projects.
 
 - [Navbar](#navbar)
 - [Network status](#network-status)
+- [Device detection](#device-detection)
 
 ## _Navbar_
 
@@ -84,4 +85,47 @@ const isOnline = () => {
 };
 window.addEventListener("online", (e) => isOnline());
 window.addEventListener("offline", (e) => isOnline());
+```
+
+## _[Device detection](/projects/device-detection/)_
+
+Device detection allows us to display unique content or redirect depending on your device or browser.
+
+We will use JavaScript to define the different types of devices or most common browsers.
+
+```JS
+const ua = navigator.userAgent;
+
+const isMobile = {
+  android: () => ua.match(/android/i),
+  ios: () => ua.match(/iphone|ipad|ipod/i),
+  windows: () => ua.match(/windows phone/i),
+  any: function () {
+    return this.android() || this.ios() || this.windows();
+  },
+};
+const isDesktop = {
+  linux: () => ua.match(/linux/i),
+  mac: () => ua.match(/mac os/i),
+  windows: () => ua.match(/windows nt/i),
+  any: function () {
+    return this.linux() || this.mac() || this.windows();
+  },
+};
+const isBrowser = {
+  chrome: () => ua.match(/chrome/i),
+  safari: () => ua.match(/safari/i),
+  firefox: () => ua.match(/firefox/i),
+  opera: () => ua.match(/opera|opera mini|OPR/i),
+  edge: () => ua.match(/edge/i),
+  any: function () {
+    return (
+      this.chrome() ||
+      this.safari() ||
+      this.firefox() ||
+      this.opera() ||
+      this.edge()
+    );
+  },
+};
 ```
