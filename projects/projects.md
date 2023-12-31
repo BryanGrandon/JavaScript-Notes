@@ -129,3 +129,34 @@ const isBrowser = {
   },
 };
 ```
+
+## _Search_
+
+A web browser is a program that allows you to view the information contained in a web page.
+
+### [Search filter](/projects/search/search-filter/)
+
+```JS
+const searchFilter = (inputSearch, selector) => {
+  document.addEventListener("keyup", (e) => {
+    // Check that the event comes from card search
+    if (e.target.matches(inputSearch)) {
+      if (e.key === "Escape") e.target.value = "";
+
+      document.querySelectorAll(selector).forEach((el) => {
+        el.textContent.toLowerCase().includes(e.target.value)
+          ? el.classList.remove("filter")
+          : el.classList.add("filter");
+      });
+    }
+  });
+};
+```
+
+```CSS
+.filter {
+  visibility: hidden;
+  opacity: 0;
+  order: 1;
+}
+```
