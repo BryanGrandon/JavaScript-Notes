@@ -11,22 +11,24 @@ The best way to learn something is to put it into practice through projects.
 
 ## _Navbar_
 
-The navigation bar is a section of a graphical user interface intended to help visitors access information.
-
-We will use JavaScript to give interactivity to the button that will show the dropdown menu.
+The navigation bar is a section of a graphical user interface intended to help visitors access information. We will use JavaScript to give interactivity to the button that will show the dropdown menu.
 
 - [Navbar 1](/projects/navbar/navbar-1/)
 
-## _[Network status](/projects/network-status/)_
+## _Network status_
 
 Network status allows us to visually show the user that they have lost their connection to the network or when the connection is restored to the network
 
-## _[Device detection](/projects/device-detection/)_
+- [Network status](/projects/network-status/)
 
-Device detection allows us to display unique content or redirect depending on your device or browser.
+## _Device detection_
+
+Device Detection is the process of capturing accurate real-time intelligence about the devices being used to access online information, including web and native apps.
+
+- [Device detection](/projects/device-detection/)
 
 ## _Search_
 
-A web browser is a program that allows you to view the information contained in a web page.
+Search is a way to show the user the main topic or different topics related to what they have entered in the search engine.
 
 - [Search filter](/projects/search/search-filter/)
