@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caesar cipher</title>
+    <link rel="stylesheet" href="reset-css-styles.css" />
+    <link rel="stylesheet" href="caesar-cipher.css" />
+    <script src="caesar-cipher.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <article class="encryption">
+        <h2 class="encryption__title">Caesar Cipher</h2>
+        <section class="encryption__form">
+          <p class="form__text">Enter your message:</p>
+          <textarea class="form__textarea input--message"></textarea>
+
+          <section class="form__scrolling">
+            <p class="form__text">Enter scroll number:</p>
+            <input type="number" class="input--scrolling" />
+          </section>
+
+          <button class="button button--encryption">Encode the message</button>
+          <p class="form__text">Coded message:</p>
+          <p class="form__textarea encryption__result"></p>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
