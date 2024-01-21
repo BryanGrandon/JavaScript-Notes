@@ -38,4 +38,4 @@ Search is a way to show the user the main topic or different topics related to w
 
 In cryptography, the Caesar cipher, also known as a shift cipher, is one of the simplest and most widely used encryption techniques. It is a type of substitution cipher in which a letter in the original text is replaced by another letter that is a fixed number of positions later in the alphabet.
 
-- [Caesar cipher](/projects/caesar-cipher/)
+- [Encryption](/projects/caesar-cipher/)
