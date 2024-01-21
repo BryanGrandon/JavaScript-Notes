@@ -27,28 +27,18 @@ const alphabet = [
   "Z",
 ];
 
-/**
- * The `encryption` function takes a message and a scrolling value, and returns an encrypted version of
- * the message by shifting each letter in the message by the scrolling value.
- * @param message - The `message` parameter is a string that represents the message to be encrypted.
- * @param scrolling - The scrolling parameter determines how many positions each letter in the message
- * should be shifted in the alphabet. A positive scrolling value will shift the letters to the right,
- * while a negative scrolling value will shift the letters to the left.
- * @returns The function `encryption` returns the encrypted message.
- */
 const encryption = (message, scrolling) => {
   const arrMessage = message.toUpperCase().split("");
   let result = [];
 
   arrMessage.map((e) => {
-    let isLocated = alphabet.includes(e);
+    let isIncluded = alphabet.includes(e);
 
-    if (isLocated) {
-      //
+    if (isIncluded) {
       let indexScrolling = alphabet.indexOf(e) + scrolling;
 
-      let isGreaterThan25 = indexScrolling > 25;
-      let isLessThanN25 = indexScrolling < 0 && indexScrolling > -25;
+      const isGreaterThan25 = indexScrolling > 25;
+      const isLessThanN25 = indexScrolling < 0 && indexScrolling > -25;
 
       if (isGreaterThan25) result += alphabet[indexScrolling - 26];
       else if (isLessThanN25) result += alphabet[indexScrolling + 26];
@@ -58,6 +48,7 @@ const encryption = (message, scrolling) => {
       result += e;
     }
   });
+
   return result;
 };
 

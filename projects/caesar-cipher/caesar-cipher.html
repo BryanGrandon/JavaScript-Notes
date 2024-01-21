@@ -4,15 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Caesar cipher</title>
-    <link rel="stylesheet" href="../reset-css-styles.css" />
-    <link rel="stylesheet" href="encryption.css" />
-    <script src="encryption.js" defer></script>
+    <link rel="stylesheet" href="./reset-css-styles.css" />
+    <link rel="stylesheet" href="./caesar-cipher.css" />
+    <script src="caesar-cipher.js" defer></script>
   </head>
   <body>
     <main class="container">
       <article class="encryption">
         <h2 class="encryption__title">Caesar Cipher</h2>
         <section class="encryption__form">
+          <section class="form__option">
+            <a href="./encryption.html" class="form__link link--active">
+              Encryption
+            </a>
+            <a href="#" class="form__link">Decoding</a>
+          </section>
+
           <p class="form__text">Enter your message:</p>
           <textarea class="form__textarea input--message"></textarea>
 

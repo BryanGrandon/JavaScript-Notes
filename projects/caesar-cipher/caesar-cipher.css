@@ -27,6 +27,25 @@
   gap: 0.8rem;
 }
 
+/* Form option */
+
+.form__option {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* link */
+.form__link {
+  font-size: 1.1rem;
+  color: #fc5e5b;
+  padding: 0 0.3rem;
+  font-family: cursive;
+}
+.link--active {
+  border-bottom: 1px solid #1f1235;
+}
+
 /* Form text */
 
 .form__text {
