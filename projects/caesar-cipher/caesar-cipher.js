@@ -15,7 +15,7 @@ const alphabet = [
   "N",
   "O",
   "P",
-  "K",
+  "Q",
   "R",
   "S",
   "T",
@@ -28,27 +28,34 @@ const alphabet = [
 ];
 
 /**
- * The cipher function takes a message and a scrolling value, converts the message to uppercase, and
- * returns a new string where each character is shifted by the scrolling value in the alphabet.
- * @param message - The `message` parameter is a string that represents the message you want to encrypt
+ * The `encryption` function takes a message and a scrolling value, and returns an encrypted version of
+ * the message by shifting each letter in the message by the scrolling value.
+ * @param message - The `message` parameter is a string that represents the message to be encrypted.
  * @param scrolling - The scrolling parameter determines how many positions each letter in the message
- * should be shifted in the cipher. A positive scrolling value will shift the letters to the right,
+ * should be shifted in the alphabet. A positive scrolling value will shift the letters to the right,
  * while a negative scrolling value will shift the letters to the left.
- * @returns The function `cipher` returns the result of the ciphered message.
+ * @returns The function `encryption` returns the encrypted message.
  */
 const encryption = (message, scrolling) => {
   const arrMessage = message.toUpperCase().split("");
   let result = [];
 
   arrMessage.map((e) => {
-    let index = alphabet.indexOf(e);
-    let indexScrolling = index + scrolling;
+    let isLocated = alphabet.includes(e);
 
-    if (indexScrolling > 25) result += alphabet[indexScrolling - 26];
-    else if (indexScrolling < 0 && indexScrolling > -25) {
-      result += alphabet[indexScrolling + 26];
+    if (isLocated) {
+      //
+      let indexScrolling = alphabet.indexOf(e) + scrolling;
+
+      let isGreaterThan25 = indexScrolling > 25;
+      let isLessThanN25 = indexScrolling < 0 && indexScrolling > -25;
+
+      if (isGreaterThan25) result += alphabet[indexScrolling - 26];
+      else if (isLessThanN25) result += alphabet[indexScrolling + 26];
+      else result += alphabet[indexScrolling];
     } else {
-      result += alphabet[indexScrolling];
+      // If the element is not in the alphabet, the element is added to the result
+      result += e;
     }
   });
   return result;
