@@ -15,6 +15,7 @@ The best way to learn something is to put it into practice through projects.
 The navigation bar is a section of a graphical user interface intended to help visitors access information. We will use JavaScript to give interactivity to the button that will show the dropdown menu.
 
 - [Navbar 1](/projects/navbar/navbar-1/)
+- [Navbar 2](/projects/navbar/navbar-2/)
 
 ## _Network status_
 
