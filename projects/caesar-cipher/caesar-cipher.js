@@ -38,7 +38,7 @@ const encryption = (message, scrolling) => {
       let indexScrolling = alphabet.indexOf(e) + scrolling;
 
       const isGreaterThan25 = indexScrolling > 25;
-      const isLessThanN25 = indexScrolling < 0 && indexScrolling > -25;
+      const isLessThanN25 = indexScrolling < 0 && indexScrolling >= -25;
 
       if (isGreaterThan25) result += alphabet[indexScrolling - 26];
       else if (isLessThanN25) result += alphabet[indexScrolling + 26];
