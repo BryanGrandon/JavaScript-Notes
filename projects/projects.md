@@ -9,6 +9,7 @@ The best way to learn something is to put it into practice through projects.
 - [Device detection](#device-detection)
 - [Search](#search)
 - [Caesar cipher](#caesar-cipher)
+- [JSON Placeholder](#json-placeholder)
 
 ## _Navbar_
 
@@ -40,3 +41,9 @@ Search is a way to show the user the main topic or different topics related to w
 In cryptography, the Caesar cipher, also known as a shift cipher, is one of the simplest and most widely used encryption techniques. It is a type of substitution cipher in which a letter in the original text is replaced by another letter that is a fixed number of positions later in the alphabet.
 
 - [Encryption](/projects/caesar-cipher/)
+
+## _JSON Placeholder_
+
+We will use JSON Placeholder which is a free fake API for testing and prototyping.
+
+- [User](/projects/json-placeholder/users/)
