@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User JSON Placeholder</title>
+    <!-- reset styles -->
+    <link rel="stylesheet" href="reset-css-styles.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="users.css" />
+    <!-- font icons -->
+    <script
+      src="https://kit.fontawesome.com/d5a0014502.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- js -->
+    <script src="users.js" defer></script>
+  </head>
+  <body>
+    <main id="root"></main>
+    <template id="template-info-card">
+      <article class="info-card">
+        <section class="info-card__header">
+          <i class="fa-solid fa-briefcase"></i>
+          <h3 class="info-card__company"></h3>
+        </section>
+        <section class="info-card__user">
+          <p class="info-card__name"></p>
+          <hr class="info-card__hr" />
+          <section class="info-card__section">
+            <i class="fa-solid fa-phone"></i>
+            <p class="info-card__phone"></p>
+          </section>
+
+          <section class="info-card__section">
+            <i class="fa-regular fa-envelope"></i>
+            <p class="info-card__email"></p>
+          </section>
+
+          <section class="info-card__section">
+            <i class="fa-solid fa-arrow-pointer"></i>
+            <a class="info-card__website"></a>
+          </section>
+        </section>
+      </article>
+    </template>
+  </body>
+</html>

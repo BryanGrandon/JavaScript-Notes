@@ -1,0 +1,63 @@
+#root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* info card */
+
+.info-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 18rem;
+  box-shadow: 1px 1px 4px #1f1235;
+}
+
+/* header */
+
+.info-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 1rem;
+  background-color: #ff6e6c;
+}
+
+/* Company */
+
+.info-card__company {
+  font-variant: small-caps;
+}
+
+/* hr */
+
+.info-card__hr {
+  border-bottom: 1px solid #67568c;
+}
+
+/* info user */
+
+.info-card__user {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* section */
+
+.info-card__section {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0 0.5rem;
+}
+
+/* website */
+
+.info-card__website {
+  color: #550eee;
+}
