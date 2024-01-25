@@ -47,3 +47,4 @@ In cryptography, the Caesar cipher, also known as a shift cipher, is one of the 
 We will use JSON Placeholder which is a free fake API for testing and prototyping.
 
 - [User](/projects/json-placeholder/users/)
+- [Posts](/projects/json-placeholder/posts/)
