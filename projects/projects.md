@@ -48,3 +48,4 @@ We will use JSON Placeholder which is a free fake API for testing and prototypin
 
 - [User](/projects/json-placeholder/users/)
 - [Posts](/projects/json-placeholder/posts/)
+- [Posts](/projects/json-placeholder/photos/)
