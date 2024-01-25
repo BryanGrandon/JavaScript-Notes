@@ -1,0 +1,17 @@
+#root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.photo-card {
+  border-radius: 1rem;
+  width: 14rem;
+  overflow: hidden;
+  box-shadow: 1px 1px 4px #1f1234;
+}
+.photo-card__title {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+}
