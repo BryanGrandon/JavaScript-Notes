@@ -10,6 +10,7 @@ The best way to learn something is to put it into practice through projects.
 - [Search](#search)
 - [Caesar cipher](#caesar-cipher)
 - [JSON Placeholder](#json-placeholder)
+- [Color Change](#color-change)
 
 ## _Navbar_
 
@@ -48,4 +49,8 @@ We will use JSON Placeholder which is a free fake API for testing and prototypin
 
 - [User](/projects/json-placeholder/users/)
 - [Posts](/projects/json-placeholder/posts/)
-- [Posts](/projects/json-placeholder/photos/)
+- [Photos](/projects/json-placeholder/photos/)
+
+## _Color Change_
+
+- [Hexadecimal color generator](/projects/color-change/hexadecimal/)
