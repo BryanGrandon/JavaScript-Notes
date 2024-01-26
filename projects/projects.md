@@ -11,6 +11,7 @@ The best way to learn something is to put it into practice through projects.
 - [Caesar cipher](#caesar-cipher)
 - [JSON Placeholder](#json-placeholder)
 - [Color Change](#color-change)
+- [Frequently asked questions page](#frequently-asked-questions-page)
 
 ## _Navbar_
 
@@ -53,4 +54,12 @@ We will use JSON Placeholder which is a free fake API for testing and prototypin
 
 ## _Color Change_
 
+The hexadecimal color generator on the web page we can see the color and the hexadecimal.
+
 - [Hexadecimal color generator](/projects/color-change/hexadecimal/)
+
+## _Frequently asked questions page_
+
+A frequently asked questions page that informs users about a company and drives traffic to the website through organic search results.
+
+- [Frequently Asked Questions](/projects/frequently-asked-questions/)
