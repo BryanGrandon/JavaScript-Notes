@@ -12,6 +12,7 @@ The best way to learn something is to put it into practice through projects.
 - [JSON Placeholder](#json-placeholder)
 - [Color Change](#color-change)
 - [Frequently asked questions page](#frequently-asked-questions-page)
+- [Age Calculator](#age-calculator)
 
 ## _Navbar_
 
@@ -44,7 +45,7 @@ In cryptography, the Caesar cipher, also known as a shift cipher, is one of the 
 
 - [Encryption](/projects/caesar-cipher/)
 
-## _JSON Placeholder_
+## _[JSON Placeholder](https://jsonplaceholder.typicode.com/)_
 
 We will use JSON Placeholder which is a free fake API for testing and prototyping.
 
@@ -63,3 +64,9 @@ The hexadecimal color generator on the web page we can see the color and the hex
 A frequently asked questions page that informs users about a company and drives traffic to the website through organic search results.
 
 - [Frequently Asked Questions](/projects/frequently-asked-questions/)
+
+## _Age Calculator_
+
+This project allows us to calculate the age using your date of birth.
+
+- [Age Calculator](/projects/age-calculator/)
