@@ -13,6 +13,7 @@ The best way to learn something is to put it into practice through projects.
 - [Color Change](#color-change)
 - [Frequently asked questions page](#frequently-asked-questions-page)
 - [Age Calculator](#age-calculator)
+- [Tip Calculator]()
 
 ## _Navbar_
 
@@ -70,3 +71,9 @@ A frequently asked questions page that informs users about a company and drives 
 This project allows us to calculate the age using your date of birth.
 
 - [Age Calculator](/projects/age-calculator/)
+
+## _Tip Calculator_
+
+In this project, our aim is to build a modern tip calculator
+
+- [Tip calculator](/projects/tip-calculator/)
