@@ -1,3 +1,5 @@
+// The JavaScript object is a data structure that allows us to have key-value pairs.
+
 const object = {
   key: "value",
   keyDelete: "value",
@@ -30,6 +32,7 @@ Object.defineProperty(object, "key", {
   enumerable: false, // Not iterable
   configurable: false, // Not delete
 });
+
 Object.defineProperties(object, {
   key: { value: "Value", writable: true },
 });
