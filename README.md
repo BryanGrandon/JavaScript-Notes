@@ -1,6 +1,6 @@
-# JavaScript
+# JavaScript Notes
 
-An interpreted programming language used on the client side (front-end) to provide dynamic and interactive enhancements to web pages.
+This project is to have a record of what I have learned about JavaScript. Also to add or update content already seen to make it more readable.
 
 - [Document Object Model](/dom/dom.md)
 - [Application Programming Interface](/api/api.md)
@@ -8,7 +8,7 @@ An interpreted programming language used on the client side (front-end) to provi
 
 ## _Table of content_
 
-- [Introduction](#introduction)
+- [What is Javascript](#what-is-javascript)
 - [All about variables](#all-about-variables)
 - [Data Types](#data-types)
 - [Type casting](#type-casting)
@@ -25,123 +25,80 @@ An interpreted programming language used on the client side (front-end) to provi
 - [Generator](#generator)
 - [Modules](#modules)
 
-## _Introduction_
+## What is JavaScript?
 
-This project is to have a record of what i have learned about JavaScript.
-
-### Related website
-
-- [JavaScript.info](https://javascript.info/)
-- [iHateRegex](https://ihateregex.io/)
+JavaScript is a programming language that developers use to make interactive web pages.
 
 ## _All about variables_
 
-To store and represent this information in the JavaScript codebase, we use variables. A variable is a container for a value.
+To store and represent information in JavaScript code, we use variables.
 
-### [Variable Declaration](/code/all-about-variables/variable-declaration.js)
+A variable is the container of a value and to use them it is necessary to declare them using one of the keywords such as **[var](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)**, **[let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)** and **[const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)**.
 
-To use variables in JavaScript, you need to declare them using one of the keywords.
+Depending on the **keyword** used it will have a certain **[scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope)** this refers to the visibility of a variable or how it can be used after being declared.
 
-- `Var`.
-- `Let`.
-- `Const`.
-
-### Hoisting
-
-JavaScript Hoisting refers to the process whereby the interpreter appears
-to move the declaration of functions, variables, or classes to the top
-of their scope, prior to execution of the code.
-
-- Lexical environment.
-- Temporal Dead Zone.
-
-### [Variable Scope](/code/all-about-variables/variable-scope.js)
-
-In JavaScript, scope refers to the visibility of a variable or how it can be used after it is declared. The scope of a variable depends on the keyword that was used to declare it.
-
-- Global Scope.
-- Function Scope.
-- Block Scope.
+The concept of **[Hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)** was intended as a general way of referring to how execution contexts work in JavaScript.
 
 ## _Data Types_
 
-Data type refers to the type of data that a JavaScript variable can hold.
+We refer to the data types that we can assign to JavaScript variables. Furthermore, data types are divided into two groups, which are **[primitive types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)** and **[objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)**.
 
-### [Primitive type](/code/data-type/primitive-type.js)
+| Primitive Types                                          | Code                        |
+| -------------------------------------------------------- | --------------------------- |
+| [String](/code/data-type/primitive-type/string.js)       | `let string = "string";`    |
+| [Number](/code/data-type/primitive-type/number.js)       | `let number = 21;`          |
+| [BigInt](/code/data-type/primitive-type/bigint.js)       | `let bigInt = 1e9n;`        |
+| [Boolean](/code/data-type/primitive-type/boolean.js)     | `let boolean = true;`       |
+| [Null](/code/data-type/primitive-type/null.js)           | `let nothing = null;`       |
+| [Undefined](/code/data-type/primitive-type/undefined.js) | `let isUndefined;`          |
+| [Symbol](/code/data-type/primitive-type/symbol.js)       | `let symbol = Symbol("id")` |
 
-In JavaScript, a primitive value is a data that is not an object and has no methods or properties. <br />
-There are 7 primitive data types.
+The [Object](/code/data-type/objects/date.js) and build in object are [Console object](/code/data-type/objects/console.js), [Date object](/code/data-type/objects/date.js), [Math object](/code/data-type/objects/math.js).
 
-- String
-- Number
-- bigInt
-- Boolean
-- Null
-- Undefined
-- Symbol
+## _Type casting_
 
-### [Object](/code/data-type/object.js)
+Type conversion means the transfer of data from one data type to another.
 
-JavaScript object is a data structure that allows us to have key-value pairs; so we can have
-distinct keys and each key is mapped to a value that can be of any JavaScript data type.
+**Explicit Type Casting.**
 
-```JS
-const object = {
-  key: "value",
-};
+```js
+let number = parseInt("25.5");
+let float = parseFloat("25.5");
+let string = number.toString();
 ```
 
-### [Build in Object](/code/data-type/built-in-objects.js)
+**Implicit Type Casting.**
 
-Built-in objects, or “global objects”, are those built into the language specification itself.
+```js
+let numberOrString = "4" - "2";
+```
 
-- Console object.
-- Date object.
-- Math object.
+**Type Conversions.**
 
-## _[Type casting](/code/type-casting.js_)
-
-Type conversion (or typecasting) means the transfer of data from one data type to another.
-Implicit conversion happens when the compiler (for compiled languages) or runtime (for script languages like JavaScript) automatically converts data types.
-The source code can also explicitly require a conversion to take place.
-
-- Explicit Type Casting.
-- Implicit Type Casting.
-- Type Conversions.
+```js
+String();
+Number();
+Boolean();
+```
 
 ## _Data Structure_
 
 A Data structure is a format to organize, manage and store data in a way that allows efficient
-access and modification. JavaScript has primitive (built-in) and non-primitive (not built-in)
-data structures.
 
-### [Array](/code/data-structure/array.js)
+The [Array](/code/data-structure/array.js) it stores multiple values and elements in one variable.
 
-The arrays it stores multiple values and elements in one variable.
-
-```JS
-const arrayString = ["Element 1", "Element 2", "Element 3"];
+```js
+let arr = ["Element 1", "Element 2", "Element 3"];
 ```
 
-### [Keyed Collection](/code/data-structure/keyed-collection.js)
+[Keyed Collection](/code/data-structure/keyed-collection.js) are data collections that are ordered by key not index.
 
-Keyed collections are data collections that are ordered by key not index. They are associative
-in nature. Map and set objects are keyed collections and are iterable in the order of insertion.
+```js
+let set = new set();
+let map = new map();
+```
 
-- Map.
-- weakMap.
-- Set.
-- weakMap.
-
-### [JavaScript Object Notion](/code/data-structure/json.js)
-
-JSON is a lightweight data interchange format, easy to read, write and parse for users and generate for machines.
-
-JSON supports the following data types:
-
-- Objects { ... }.
-- Arrays [ ... ].
-- Primitives type.
+[JSON](/code/data-structure/json.js) is a lightweight data interchange format, easy to read, write and parse for users and generate for machines.
 
 ## _Equality comparisons_
 
@@ -151,6 +108,8 @@ difference between variables or values.
 - Is Loosely Equal ( `==` )
 - Is Strictly Equal ( `===` )
 - Same Value ( `Object.is()` )
+
+<!-- Here -->
 
 ## _[Loops](/code/loops/loops.js)_
 
