@@ -14,7 +14,7 @@ This project is to have a record of what I have learned about JavaScript. Also t
 - [Type casting](#type-casting)
 - [Data Structure](#data-structure)
 - [Equality comparisons](#equality-comparisons)
-- [Loops](#loops)
+- [Loops and Iterations](#loops-and-iterations)
 - [Control flow](#control-flow)
 - [Operator](#operator)
 - [Function](#function)
@@ -103,59 +103,33 @@ let map = new map();
 ## _Equality comparisons_
 
 Comparison operators are used in logical statements to determine equality or
-difference between variables or values.
+difference between variables or values. Is Loosely Equal ( `==` ), is Strictly Equal ( `===` ), same Value ( `Object.is()` ).
 
-- Is Loosely Equal ( `==` )
-- Is Strictly Equal ( `===` )
-- Same Value ( `Object.is()` )
+## _Loops and Iterations_
 
-<!-- Here -->
+Loops offer a quick and easy way to do something repeatedly. there are different ways to create a loop such as **[for](/code/loops/for.js)**, **[do while](/code/loops/do-while.js)** and **[while](/code/loops/while.js)**.
 
-## _[Loops](/code/loops/loops.js)_
-
-Loops offer a quick and easy way to do something repeatedly.
-
-- For.
-- Do while.
-- While.
-
-### [Iterations](/code/loops/iterations.js)
-
-- Break.
-- Continue.
-- Label
+Use the **[break statement](/code/loops/break.js)** to terminate a loop, switch, or in conjunction with a labeled statement. <br/>
+The **[continue statement](/code/loops/continue.js)** can be used to restart a while, do-while, for, or label statement.
 
 ## _Control flow_
 
-In JavaScript, the Control flow is a way of how your computer runs code from top to bottom.
-unless it hits any statement that changes the control flow of the program such as loops,
-conditionals, etc.
+Code is run in order from the first line in the file to the last line, unless the computer runs across the (extremely frequent) structures that change the control flow, such as conditionals and loops.
 
-### [Conditional statements](/code/control-flow/conditional-statements.js)
+**Conditional statements** control behavior in JavaScript and determine whether or not pieces of code can run. They can be [if ... else](/code/control-flow/if.js) and [Switch](/code/control-flow/switch.js).
 
-Conditional statements control behavior in JavaScript and determine whether or not pieces of code can run.
+[Exception handling](/code/control-flow/exception-hendling.js) The code in the `try` block is executed first, and if it throws an exception, the code in the `catch` block will be executed.
 
-- If
-- Else if
-- Else
-- Switch
-
-### [Exception handling](/code/control-flow/exception-hendling.js)
-
-The code in the try block is executed first, and if it throws an exception, the code in the catch block will be executed.
-
-- Try
-- Catch (error)
-- Finally
-
-## _[Operator](/code/operator.js)_
+## _Operator_
 
 Operators allow you to manipulate the value of variables, perform mathematical operations with their values and compare different variables.
 
-- Arithmetic operator
-- Comparison operator
-- Logical operator
-- Ternary operator
+- [Arithmetic operator](/code/operator/arithmetic.js)
+- [Comparison operator](/code/operator/comparison.js)
+- [Logical operator](/code/operator/logical.js)
+- [Ternary operator](/code/operator/ternary.js)
+
+<!-- Here -->
 
 ## _[Function](/code/function/function.js)_
 
@@ -177,13 +151,13 @@ A space or environment in which a particular variable or function can be accesse
 ## _Strict mode_
 
 Strict mode applies to an entire script or to individual functions. To invoke strict mode on a
-whole script, type exactly "use strict"; before any other expression.
+whole script, type exactly `"use strict";` before any other expression.
 
 It enforces stricter parsing and error handling on the code at runtime. It also helps you write
 cleaner code and catch errors and bugs that might otherwise go unnoticed.
 
 ```JS
-"use strict"
+"use strict";
 // code
 ```
 
@@ -197,71 +171,53 @@ In JavaScript, the this keyword is a little different compared to other language
 
 ## _Asynchronous JavaScript_
 
-Asynchronous programming is a technique that enables your program to start a potentially
-long-running task and still be able to be responsive to other events while that task runs,
-rather than having to wait until that task has finished.
+Asynchronous programming is a technique that enables your program to start a potentially long-running task and still be able to be responsive to other events while that task runs, rather than having to wait until that task has finished.
 
-### [setTimeout](/code/asynchronous/settimerout.js)
-
-The setTimeout runs a function after the specified period expires.
-Times are declared in milliseconds.
+The **[setTimeout](/code/asynchronous/settimerout.js)** runs a function after the specified period expires. Times are declared in milliseconds.
 
 ```JS
 // setTimeout (func|code, [delay], [arg1], [arg2], ...)
 ```
 
-### [setInterval](/code/asynchronous/setinterval.js)
-
-setInterval() is similar to setTimeout, with one difference. Instead of executing the callback function once, it will execute it forever, at the specified time interval
+**[setInterval](/code/asynchronous/setinterval.js)** is similar to setTimeout, with one difference. Instead of executing the callback function once, it will execute it forever, at the specified time interval
 
 ```JS
 // setInterval (func|code, [delay], [arg1], [arg2], ...)
 ```
 
-### Event Loop
+**Event Loop**
 
-**Synchronous:** The synchronous operation you wait for the result.. <br>
-**Asynchronous:** The asynchronous operation does not wait for the result.
+- Synchronous: The synchronous operation you wait for the result..
+- Asynchronous: The asynchronous operation does not wait for the result.
 
-### [Callback](/code/asynchronous/callback.js)
-
-A callback function is a function passed into another function as an argument,
+A [Callback](/code/asynchronous/callback.js) function is a function passed into another function as an argument,
 which is then invoked inside the outer function to complete some kind of routine or action.
 
-### [Promise](/code/asynchronous/promise.js)
-
-Promises are a much better way to work with asynchronous code in JavaScript than
+[Promises](/code/asynchronous/promise.js) are a much better way to work with asynchronous code in JavaScript than
 the old and error-prone callback approach.
 
-### [Async / Await](/code/asynchronous/async-await.js)
-
-async/await is a special syntax to work with promises in a more comfortable fashion.
-We use async keyword to declare a async function that return a Promise, and the await keyword makes a function wait for a Promise.
+[Async / Await](/code/asynchronous/async-await.js) is a special syntax to work with promises in a more comfortable fashion. We use async keyword to declare a async function that return a Promise, and the await keyword makes a function wait for a Promise.
 
 ## _[Classes](/code/classes/classes.js)_
 
 Classes are a template for creating objects. They encapsulate data with code to work on that data.
 
-### [Getter Setter](/code/classes/getter-setter.js)
-
-- Getter, the code executed to get obj.propName
-- Setter, the code executed to set obj.propName = value
+**[Getter Setter](/code/classes/getter-setter.js)**
 
 ```JS
+// Getter, the code executed to get obj.propName
 get fullName() {
     return `${this.name} ${this.lastName}`;
   },
-
+// Setter, the code executed to set obj.propName = value
 set fullName(value) {
   [this.name, this.lastName] = value.split(" ");
 },
 ```
 
-### [Inheritance](/code/classes/inheritance.js)
+In programming, [inheritance](/code/classes/inheritance.js) refers to passing down characteristics from a parent to a child so that a new piece of code can reuse and build upon the features of an existing one.
 
-In programming, inheritance refers to passing down characteristics from a parent to a child so that a new piece of code can reuse and build upon the features of an existing one.
-
-### [Additional](/code/classes/additional.js)
+**[Additional](/code/classes/additional.js)**
 
 - Protected properties are usually prefixed with the underscore \_.
 - Privates should start with #. They are only accessible from inside the class.
@@ -275,48 +231,6 @@ over a given sequence in a variety of ways, such as using the for...of loop.
 
 Modules encapsulate all sorts of code like functions and variables and expose all this to other files.
 
-### Export
+The [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) declaration is used to export values from a JavaScript module.
 
-**Named:** The name of the imported data is the one that allows us to import it to another file.
-There may be multiple exports.
-
-```JS
-const array = [1, 2, 3, 4];
-const object = {
-  user: "Bryan",
-  email: "@gmail.com",
-};
-function forExport() {
-  console.log(`Function Exported`);
-}
-export {object, array, forExport}
-```
-
-**Default:** There can only be one export default.
-Note that it is not possible to use var, let, or const with export default.
-
-```JS
-export default function forExportDefault() {
-  console.log(`Export Default`);
-}
-```
-
-### Import
-
-The import() syntax, commonly called dynamic import, is a function-like expression that allows loading an ECMAScript modules asynchronously and dynamically into a potentially non-module environment.
-
-```JS
-// Export Default
-import forExportDefault, {
-  // Export
-  array,
-  forExport,
-  object,
-  variable,
-} from "./export.js";
-
-const obj = object;
-
-// Export Default
-forExportDefault();
-```
+The [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) syntax, commonly called dynamic import, is a function-like expression that allows loading an ECMAScript modules asynchronously and dynamically into a potentially non-module environment.
