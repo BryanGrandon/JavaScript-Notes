@@ -1,9 +1,9 @@
 function modify(array, callback) {
-  array.push("bryan");
+  array.push("Bryan");
   callback(array);
 }
 
-const names = ["catalina", "cecilia"];
+const names = ["catalina", "Cecilia"];
 
 modify(names, (array) => {
   console.log(`Now the array is  ${array.length} elements`);
@@ -12,7 +12,7 @@ modify(names, (array) => {
 // asynchronous
 
 function modify2(array, callback) {
-  array.push("andres");
+  array.push("Andrés");
   setTimeout(() => {
     callback(array);
   }, 3000);

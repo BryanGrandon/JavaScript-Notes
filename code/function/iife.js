@@ -6,7 +6,7 @@
 
 // Arrow function
 
-let user = "andres";
+let user = "Andrés";
 ((x) => {
   console.log(`Hello ${x}`);
 })(user);
