@@ -5,6 +5,7 @@
 @import "./global/root.css";
 
 /* Component Styles */
+@import "./styles/navbar.css";
 
 .body {
   /* background-image: url("https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80"); */
@@ -12,11 +13,24 @@
   background-position: center;
   color: var(--dm-dark);
 }
+main header,
+main article {
+  height: 100vh;
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+  main,
+  .header {
+    width: 1200px;
+    margin: auto;
+  }
+}
 
 /* We adapt them to the dark mode.  */
 @media (prefers-color-scheme: dark) {
   .body {
     color: var(--dm-light);
-    background: var(--dm-dark);
+    background-color: var(--dm-dark);
   }
 }

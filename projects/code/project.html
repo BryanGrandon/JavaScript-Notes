@@ -18,38 +18,44 @@
     <!-- JS -->
     <script src="project.js" type="module" defer></script>
   </head>
-  <body class="body">
+  <body class="body" id="home">
     <header class="header">
-      <a href="#" class="logo">Project JS</a>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-          <li>
-            <i class="fa-solid fa-moon"></i>
-            <i class="fa-solid fa-sun"></i>
-          </li>
+      <nav class="navbar">
+        <a href="#" class="logo">Project JS</a>
+        <ul class="navbar__list">
+          <li><a href="./project.html" class="navbar__element">Home</a></li>
+          <li><a href="#projects" class="navbar__element">Projects</a></li>
+          <li><a href="#contact" class="navbar__element">Contact</a></li>
         </ul>
       </nav>
 
-      <nav>
-        <ul>
-          <li><i class="fa-solid fa-house"></i></li>
-          <li><i class="fa-solid fa-folder"></i></li>
-          <li><i class="fa-solid fa-address-card"></i></li>
-          <li>
-            <i class="fa-solid fa-moon"></i>
-            <i class="fa-solid fa-sun"></i>
-          </li>
-        </ul>
-      </nav>
+      <nav class="lower-navigation">
+        <a href="#home" class="lower-navigation__element">
+          <i class="fa-solid fa-house"></i>
+        </a>
 
-      <button class="button button--navbar">
-        <i class="fa-solid fa-bars"></i>
-      </button>
+        <a href="#projects" class="lower-navigation__element">
+          <i class="fa-solid fa-folder"></i>
+        </a>
+
+        <a href="#contact" class="lower-navigation__element">
+          <i class="fa-solid fa-address-card"></i>
+        </a>
+      </nav>
     </header>
 
-    <main></main>
+    <main>
+      <header>
+        <h1>Home</h1>
+      </header>
+
+      <article id="projects">
+        <h2>Projects</h2>
+      </article>
+
+      <article id="contact">
+        <h2>Contact</h2>
+      </article>
+    </main>
   </body>
 </html>
