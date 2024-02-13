@@ -1,0 +1,13 @@
+:root {
+  --main: #fff;
+  --secondary: #67568c;
+  --ternary: #fbdd74;
+  --highlight: #ff6e6c;
+  --stroke: #1f1235;
+
+  --font-color: ;
+
+  /* dm => Dark Mode */
+  --dm-light: #ececec;
+  --dm-dark: #191919;
+}

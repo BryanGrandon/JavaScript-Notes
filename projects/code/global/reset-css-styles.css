@@ -1,16 +1,10 @@
 /* Here we define the custom properties */
 :root {
   --black: #393939;
+  --white: #ececec;
   /* Typography */
   --type-primary: system-ui, -apple-system, sans-serif;
   --type-secondary: Verdana;
-}
-
-/* We adapt them to the dark mode.  */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --black: #ececec;
-  }
 }
 
 /* We reset the margins and paddings of all labels. */
@@ -145,7 +139,7 @@ body {
   min-height: 100vh;
   font-size: 100%;
   font-family: var(--type-primary);
-  color: var(--negro);
+  color: var(--white);
   line-height: 1.4em;
   /* optional */
   font-smooth: always;

@@ -1,8 +1,22 @@
-@import "./styles/navbar.css";
+/* Reset CSS Styles */
+@import "./global/reset-css-styles.css";
+
+/* Root colors */
+@import "./global/root.css";
+
+/* Component Styles */
 
 .body {
-  background-image: url("https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80");
-  background-color: #1f1235;
+  /* background-image: url("https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80"); */
   background-size: cover;
   background-position: center;
+  color: var(--dm-dark);
+}
+
+/* We adapt them to the dark mode.  */
+@media (prefers-color-scheme: dark) {
+  .body {
+    color: var(--dm-light);
+    background: var(--dm-dark);
+  }
 }
