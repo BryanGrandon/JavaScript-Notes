@@ -7,6 +7,7 @@
 /* Component Styles */
 @import "./styles/navbar.css";
 @import "./styles/network-status.css";
+@import "./styles/search.css";
 
 .body {
   /* background-image: url("https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80"); */
@@ -21,20 +22,6 @@
   background-color: #bebebe;
 }
 
-/* header Main */
-
-.header-main {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  color: #000;
-}
-.header-main__section {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
 /* title */
 
 .title {
@@ -47,7 +34,7 @@
 
 .global {
   min-height: 100vh;
-  padding: 0 1rem;
+  padding: 8rem 1rem;
 }
 
 /* svg */
@@ -56,6 +43,32 @@
   height: 15rem;
   width: auto;
   object-fit: contain;
+}
+
+/* Header Text */
+
+.h-text__section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* header Main */
+
+.header-main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #000;
+}
+
+/* Projects */
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 @media screen and (max-width: 600px) {
