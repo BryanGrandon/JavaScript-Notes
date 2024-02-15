@@ -14,13 +14,18 @@
   color: var(--dm-dark);
 }
 
+/* Container */
+
+.container--1 {
+  background-color: #bebebe;
+}
+
 /* header Main */
 
 .header-main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #bebebe;
   color: #000;
 }
 .header-main__section {
@@ -28,7 +33,10 @@
   flex-direction: column;
   gap: 1rem;
 }
-.header-main__title {
+
+/* title */
+
+.title {
   font-size: 2rem;
   font-weight: bold;
   line-height: 1;
@@ -65,7 +73,7 @@
   .svg {
     height: 25rem;
   }
-  .article,
+  .global,
   .header {
     width: 1200px;
     margin: auto;
