@@ -33,7 +33,7 @@
 /* Button */
 
 .button {
-  padding: 0.4rem 5rem;
+  padding: 0.4rem 3rem;
   text-align: center;
   margin: auto;
   background-color: var(--highlight);
@@ -44,7 +44,7 @@
 
 .global {
   min-height: 100vh;
-  padding: 8rem 1rem;
+  padding: 6rem 1rem;
 }
 
 /* svg */
