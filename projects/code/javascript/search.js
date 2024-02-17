@@ -6,16 +6,16 @@
  * filtered. It can be any valid CSS selector, such as a class name, an ID, or an element type.
  */
 
-const searchFilter = (inputSearch, selector) => {
+const searchFilter = (inputSearch, title) => {
   document.addEventListener("keyup", (e) => {
     // Check that the event comes from card search
     if (e.target.matches(inputSearch)) {
       if (e.key === "Escape") e.target.value = "";
 
-      document.querySelectorAll(selector).forEach((el) => {
+      document.querySelectorAll(title).forEach((el) => {
         el.textContent.toLowerCase().includes(e.target.value)
-          ? el.classList.remove("filter")
-          : el.classList.add("filter");
+          ? el.parentNode.classList.remove("filter")
+          : el.parentNode.classList.add("filter");
       });
     }
   });

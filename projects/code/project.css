@@ -19,7 +19,7 @@
 /* Container */
 
 .container--1 {
-  background-color: #bebebe;
+  background-image: linear-gradient(to top right, #cfd9df 0%, #e2ebf0 100%);
 }
 
 /* title */
@@ -28,6 +28,16 @@
   font-size: 2rem;
   font-weight: bold;
   line-height: 1;
+}
+
+/* Button */
+
+.button {
+  padding: 0.4rem 5rem;
+  text-align: center;
+  margin: auto;
+  background-color: var(--highlight);
+  border-radius: 1rem;
 }
 
 /* global */
@@ -50,7 +60,7 @@
 .h-text__section {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: center;
 }
 

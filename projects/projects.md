@@ -6,7 +6,6 @@ The best way to learn something is to put it into practice through projects.
 
 ## _Table of content_
 
-- [Search](#search)
 - [Caesar cipher](#caesar-cipher)
 - [JSON Placeholder](#json-placeholder)
 - [Color Change](#color-change)
