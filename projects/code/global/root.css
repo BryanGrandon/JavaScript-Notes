@@ -1,11 +1,11 @@
 :root {
   --main: #fff;
   --secondary: #67568c;
-  --ternary: #fbdd74;
+
   --highlight: #ff6e6c;
   --stroke: #1f1235;
 
-  --font-color: ;
+  --gradient: linear-gradient(to top right, #cfd9df 0%, #e2ebf0 100%);
 
   /* dm => Dark Mode */
   --dm-light: #ececec;

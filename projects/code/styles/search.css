@@ -51,9 +51,10 @@
   border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   overflow: hidden;
   color: #000;
-  background-image: linear-gradient(to top right, #cfd9df 0%, #e2ebf0 100%);
+  background-image: var(--gradient);
   gap: 1rem;
   padding: 1rem 1.5rem;
 }
