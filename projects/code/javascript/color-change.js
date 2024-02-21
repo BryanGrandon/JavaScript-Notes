@@ -18,7 +18,7 @@ export const colorChange = () => {
     e.preventDefault();
 
     if (e.target.matches(".btn-color")) {
-      createModal("Change Color", content);
+      createModal("Color Change", content);
     }
 
     if (e.target.matches(".color-change__button")) {
