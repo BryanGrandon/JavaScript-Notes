@@ -6,24 +6,16 @@ The best way to learn something is to put it into practice through projects.
 
 ## _Table of content_
 
-- [Caesar cipher](#caesar-cipher)
-- [JSON Placeholder](#json-placeholder)
 - [Color Change](#color-change)
+- [JSON Placeholder](#json-placeholder)
 - [Frequently asked questions page](#frequently-asked-questions-page)
 - [Age Calculator](#age-calculator)
-- [Tip Calculator]()
 
 ## _Search_
 
 Search is a way to show the user the main topic or different topics related to what they have entered in the search engine.
 
 - [Search filter](/projects/search/search-filter/)
-
-## _Caesar cipher_
-
-In cryptography, the Caesar cipher, also known as a shift cipher, is one of the simplest and most widely used encryption techniques. It is a type of substitution cipher in which a letter in the original text is replaced by another letter that is a fixed number of positions later in the alphabet.
-
-- [Encryption](/projects/caesar-cipher/)
 
 ## _[JSON Placeholder](https://jsonplaceholder.typicode.com/)_
 
@@ -32,12 +24,6 @@ We will use JSON Placeholder which is a free fake API for testing and prototypin
 - [User](/projects/json-placeholder/users/)
 - [Posts](/projects/json-placeholder/posts/)
 - [Photos](/projects/json-placeholder/photos/)
-
-## _Color Change_
-
-The hexadecimal color generator on the web page we can see the color and the hexadecimal.
-
-- [Hexadecimal color generator](/projects/color-change/hexadecimal/)
 
 ## _Frequently asked questions page_
 

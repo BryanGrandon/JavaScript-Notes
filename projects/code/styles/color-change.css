@@ -1,0 +1,31 @@
+@import "../global/root.css";
+
+.color-change {
+  display: grid;
+  justify-content: center;
+  background-color: #5900ff1f;
+  padding: 1rem;
+  box-shadow: 1px 1px 4px var(--stroke);
+  border-radius: 0.5rem;
+}
+.color-change__section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 15rem;
+  padding: 1rem;
+  background-color: var(--stroke);
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+}
+.color-change__text {
+  font-family: cursive;
+  font-size: 1.1rem;
+}
+
+.color-change__hex {
+  color: #fbdd74;
+  letter-spacing: 1Q;
+  font-size: 1rem;
+}
