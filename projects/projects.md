@@ -11,12 +11,6 @@ The best way to learn something is to put it into practice through projects.
 - [Frequently asked questions page](#frequently-asked-questions-page)
 - [Age Calculator](#age-calculator)
 
-## _Search_
-
-Search is a way to show the user the main topic or different topics related to what they have entered in the search engine.
-
-- [Search filter](/projects/search/search-filter/)
-
 ## _[JSON Placeholder](https://jsonplaceholder.typicode.com/)_
 
 We will use JSON Placeholder which is a free fake API for testing and prototyping.
