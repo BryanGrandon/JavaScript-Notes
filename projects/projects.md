@@ -4,35 +4,26 @@ The best way to learn something is to put it into practice through projects.
 
 - [Code](/projects/code/)
 
-## _Table of content_
+## Assets Folder
 
-- [Color Change](#color-change)
-- [JSON Placeholder](#json-placeholder)
-- [Frequently asked questions page](#frequently-asked-questions-page)
-- [Age Calculator](#age-calculator)
+In this folder we will find the files used as images, svg, videos, etc... for the project.
 
-## _[JSON Placeholder](https://jsonplaceholder.typicode.com/)_
+- [assets](/projects/assets/)
 
-We will use JSON Placeholder which is a free fake API for testing and prototyping.
+## Global Folder
 
-- [User](/projects/json-placeholder/users/)
-- [Posts](/projects/json-placeholder/posts/)
-- [Photos](/projects/json-placeholder/photos/)
+In this folder we will find files that will be used in almost all the project.
 
-## _Frequently asked questions page_
+- [global](/projects/global/)
 
-A frequently asked questions page that informs users about a company and drives traffic to the website through organic search results.
+## Javascript Folder
 
-- [Frequently Asked Questions](/projects/frequently-asked-questions/)
+In this folder we will find all the js files that are used in the different parts of the project
 
-## _Age Calculator_
+- [javascript](/projects/javascript/)
 
-This project allows us to calculate the age using your date of birth.
+## Styles Folder
 
-- [Age Calculator](/projects/age-calculator/)
+In this folder you will find all the css files used to style the different parts of the project.
 
-## _Tip Calculator_
-
-In this project, our aim is to build a modern tip calculator
-
-- [Tip calculator](/projects/tip-calculator/)
+- [styles](/projects/styles/)
