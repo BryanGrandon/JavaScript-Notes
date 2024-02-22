@@ -1,0 +1,27 @@
+@import "../global/root.css";
+
+.age-calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.8rem;
+}
+.age-calculator__text {
+  color: var(--secondary);
+  text-shadow: 1px 1px 2px var(--secondary);
+  font-family: cursive;
+  font-size: 1.2rem;
+}
+.age-calculator__input {
+  border: 1px solid #1f1235;
+  border-radius: 0.4rem;
+  padding: 0.1rem 0.2rem;
+  width: 15rem;
+}
+.age-calculator__response {
+  text-align: center;
+  font-family: cursive;
+  font-size: 1.2rem;
+  color: var(--stroke);
+}
