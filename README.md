@@ -5,6 +5,7 @@ This project is to have a record of what I have learned about JavaScript. Also t
 - [Document Object Model (DOM)](/dom/dom.md)
 - [Application Programming Interface (APIs)](/api/api.md)
 - [Projects](/projects/projects.md)
+- [Typescript](/docs/typescript.md)
 
 ## _Table of content_
 
@@ -23,6 +24,7 @@ This project is to have a record of what I have learned about JavaScript. Also t
 - [Asynchronous JavaScript](#asynchronous-javascript)
 - [Classes](#classes)
 - [Generator](#generator)
+- [Regular Expressions](#regular-expressions)
 - [Modules](#modules)
 
 ## What is JavaScript?
