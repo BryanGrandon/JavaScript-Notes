@@ -2,8 +2,8 @@
 
 This project is to have a record of what I have learned about JavaScript. Also to add or update content already seen to make it more readable.
 
-- [Document Object Model](/dom/dom.md)
-- [Application Programming Interface](/api/api.md)
+- [Document Object Model (DOM)](/dom/dom.md)
+- [Application Programming Interface (APIs)](/api/api.md)
 - [Projects](/projects/projects.md)
 
 ## _Table of content_
@@ -53,7 +53,7 @@ We refer to the data types that we can assign to JavaScript variables. Furthermo
 | [Undefined](/code/data-type/primitive-type/undefined.js) | `let isUndefined;`          |
 | [Symbol](/code/data-type/primitive-type/symbol.js)       | `let symbol = Symbol("id")` |
 
-The [Object](/code/data-type/objects/date.js) and build in object are [Console object](/code/data-type/objects/console.js), [Date object](/code/data-type/objects/date.js), [Math object](/code/data-type/objects/math.js).
+The [Object](/code/data-type/objects/object.js) and build in object are [Console object](/code/data-type/objects/console.js), [Date object](/code/data-type/objects/date.js), [Math object](/code/data-type/objects/math.js).
 
 ## _Type casting_
 
@@ -221,6 +221,10 @@ In programming, [inheritance](/code/classes/inheritance.js) refers to passing do
 
 - Protected properties are usually prefixed with the underscore \_.
 - Privates should start with #. They are only accessible from inside the class.
+
+**[Prototype](/code/classes/prototype.js)**
+
+Prototypes are the mechanism by which JavaScript objects inherit features from one another.
 
 ## _[Generator](/code/generator.js)_
 
