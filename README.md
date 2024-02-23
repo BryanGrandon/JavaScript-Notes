@@ -120,6 +120,8 @@ Code is run in order from the first line in the file to the last line, unless th
 
 [Exception handling](/code/control-flow/exception-hendling.js) The code in the `try` block is executed first, and if it throws an exception, the code in the `catch` block will be executed.
 
+[Proxies]() allow you to modify, validate, or override the fault behavior
+
 ## _Operator_
 
 Operators allow you to manipulate the value of variables, perform mathematical operations with their values and compare different variables.
@@ -230,6 +232,15 @@ Prototypes are the mechanism by which JavaScript objects inherit features from o
 
 Iterators are objects, governed by the iterator protocol, that allow us to easily iterate
 over a given sequence in a variety of ways, such as using the for...of loop.
+
+## _Regular Expressions_
+
+[Regular expressions](/code/regular-expressions.js) are patterns used to match character combinations in strings. In JavaScript, regular expressions are also objects.
+
+- Assertions
+- Quantifiers
+- Character sets
+- Groups and Ranks
 
 ## _Modules_
 
