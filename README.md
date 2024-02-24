@@ -2,12 +2,12 @@
 
 This project is to have a record of what I have learned about JavaScript. Also to add or update content already seen to make it more readable.
 
-- [Document Object Model (DOM)](/dom/dom.md)
-- [Application Programming Interface (APIs)](/api/api.md)
-- [Projects](/projects/projects.md)
+- [Document Object Model (DOM)](/docs/dom.md)
+- [Application Programming Interface (APIs)](/docs/api.md)
+- [Projects](/docs/projects.md)
 - [Typescript](/docs/typescript.md)
 
-## _Table of content_
+## Table of content
 
 - [What is Javascript](#what-is-javascript)
 - [All about variables](#all-about-variables)
@@ -31,7 +31,7 @@ This project is to have a record of what I have learned about JavaScript. Also t
 
 JavaScript is a programming language that developers use to make interactive web pages.
 
-## _All about variables_
+## All about variables
 
 To store and represent information in JavaScript code, we use variables.
 
@@ -41,7 +41,7 @@ Depending on the **keyword** used it will have a certain **[scope](https://devel
 
 The concept of **[Hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)** was intended as a general way of referring to how execution contexts work in JavaScript.
 
-## _Data Types_
+## Data Types
 
 We refer to the data types that we can assign to JavaScript variables. Furthermore, data types are divided into two groups, which are **[primitive types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)** and **[objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)**.
 
@@ -57,7 +57,7 @@ We refer to the data types that we can assign to JavaScript variables. Furthermo
 
 The [Object](/code/data-type/objects/object.js) and build in object are [Console object](/code/data-type/objects/console.js), [Date object](/code/data-type/objects/date.js), [Math object](/code/data-type/objects/math.js).
 
-## _Type casting_
+## Type casting
 
 Type conversion means the transfer of data from one data type to another.
 
@@ -83,7 +83,7 @@ Number();
 Boolean();
 ```
 
-## _Data Structure_
+## Data Structure
 
 A Data structure is a format to organize, manage and store data in a way that allows efficient
 
@@ -102,19 +102,19 @@ let map = new map();
 
 [JSON](/code/data-structure/json.js) is a lightweight data interchange format, easy to read, write and parse for users and generate for machines.
 
-## _Equality comparisons_
+## Equality comparisons
 
 Comparison operators are used in logical statements to determine equality or
 difference between variables or values. Is Loosely Equal ( `==` ), is Strictly Equal ( `===` ), same Value ( `Object.is()` ).
 
-## _Loops and Iterations_
+## Loops and Iterations
 
 Loops offer a quick and easy way to do something repeatedly. there are different ways to create a loop such as **[for](/code/loops/for.js)**, **[do while](/code/loops/do-while.js)** and **[while](/code/loops/while.js)**.
 
 Use the **[break statement](/code/loops/break.js)** to terminate a loop, switch, or in conjunction with a labeled statement. <br/>
 The **[continue statement](/code/loops/continue.js)** can be used to restart a while, do-while, for, or label statement.
 
-## _Control flow_
+## Control flow
 
 Code is run in order from the first line in the file to the last line, unless the computer runs across the (extremely frequent) structures that change the control flow, such as conditionals and loops.
 
@@ -124,7 +124,7 @@ Code is run in order from the first line in the file to the last line, unless th
 
 [Proxies]() allow you to modify, validate, or override the fault behavior
 
-## _Operator_
+## Operator
 
 Operators allow you to manipulate the value of variables, perform mathematical operations with their values and compare different variables.
 
@@ -135,7 +135,7 @@ Operators allow you to manipulate the value of variables, perform mathematical o
 
 <!-- Here -->
 
-## _[Function](/code/function/function.js)_
+## [Function](/code/function/function.js)
 
 Functions exist so that we can reuse code. They are blocks of code that are executed each time
 they are invoked. Each function is usually written to perform a specific task.
@@ -144,7 +144,7 @@ they are invoked. Each function is usually written to perform a specific task.
 - [Arrow function](/code/function/arrow-function.js).
 - [IIFE](/code/function/iife.js).
 
-### Scope and Function stack
+### _Scope and Function stack_
 
 A space or environment in which a particular variable or function can be accessed or used. Accessibility of this variable or function depends on where it is defined.
 
@@ -152,7 +152,7 @@ A space or environment in which a particular variable or function can be accesse
 - [Lexical Scoping](/code/function/lexical-scoping.js).
 - [Recursion](/code/function/recursion.js).
 
-## _Strict mode_
+## Strict mode
 
 Strict mode applies to an entire script or to individual functions. To invoke strict mode on a
 whole script, type exactly `"use strict";` before any other expression.
@@ -165,7 +165,7 @@ cleaner code and catch errors and bugs that might otherwise go unnoticed.
 // code
 ```
 
-## _[Using (this) keyword](/code/using-this-keyword.js)_
+## [Using (this) keyword](/code/using-this-keyword.js)
 
 In JavaScript, the this keyword is a little different compared to other languages. It refers to an object, but it depends on how or where it is being invoked. It also has some differences strict mode and non-strict mode.
 
@@ -173,7 +173,7 @@ In JavaScript, the this keyword is a little different compared to other language
 - In arrow function
 - Explicit binding
 
-## _Asynchronous JavaScript_
+## Asynchronous JavaScript
 
 Asynchronous programming is a technique that enables your program to start a potentially long-running task and still be able to be responsive to other events while that task runs, rather than having to wait until that task has finished.
 
@@ -202,7 +202,7 @@ the old and error-prone callback approach.
 
 [Async / Await](/code/asynchronous/async-await.js) is a special syntax to work with promises in a more comfortable fashion. We use async keyword to declare a async function that return a Promise, and the await keyword makes a function wait for a Promise.
 
-## _[Classes](/code/classes/classes.js)_
+## [Classes](/code/classes/classes.js)
 
 Classes are a template for creating objects. They encapsulate data with code to work on that data.
 
@@ -230,12 +230,12 @@ In programming, [inheritance](/code/classes/inheritance.js) refers to passing do
 
 Prototypes are the mechanism by which JavaScript objects inherit features from one another.
 
-## _[Generator](/code/generator.js)_
+## [Generator](/code/generator.js)
 
 Iterators are objects, governed by the iterator protocol, that allow us to easily iterate
 over a given sequence in a variety of ways, such as using the for...of loop.
 
-## _Regular Expressions_
+## Regular Expressions
 
 [Regular expressions](/code/regular-expressions.js) are patterns used to match character combinations in strings. In JavaScript, regular expressions are also objects.
 
@@ -244,7 +244,7 @@ over a given sequence in a variety of ways, such as using the for...of loop.
 - Character sets
 - Groups and Ranks
 
-## _Modules_
+## Modules
 
 Modules encapsulate all sorts of code like functions and variables and expose all this to other files.
 
