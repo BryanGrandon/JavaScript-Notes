@@ -2,7 +2,7 @@
 
 The best way to learn something is to put it into practice through projects.
 
-- [Code](/projects/code/)
+- [All Project Code](/projects/)
 
 ## Assets Folder
 
