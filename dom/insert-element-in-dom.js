@@ -1,5 +1,5 @@
 "use strict";
-
+const d = document;
 let text = `
 <p>The different ways to insert text from <mark>JavaScript</mark> to <mark>HTML</mark>.</p>
 
@@ -12,24 +12,17 @@ let text = `
 
 `;
 
-const d = document;
+// Set content
 
-// -------- Set content -------- //
-
-// innerText // Respecting the blank spaces
 const $element1 = d.querySelector(".inner-text");
-$element1.innerText = text;
-
-// textContent // Does not respect blank spaces
 const $element2 = d.querySelector(".text-content");
-$element2.textContent = text;
 
-// -------- Set HTML -------- //
+$element1.innerText = text; // innerText
+$element2.textContent = text; // textContent
 
-// innerHTML // Inside element
+// Set HTML
 const $element3 = d.querySelector(".outer-html");
-$element3.innerHTML = text;
-
-// outerHTML // Element replacement
 const $element4 = d.querySelector(".inner-html");
-$element4.outerHTML = text;
+
+$element3.innerHTML = text; // innerHTML
+$element4.outerHTML = text; // outerHTML

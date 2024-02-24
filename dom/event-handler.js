@@ -2,13 +2,11 @@
 const d = document;
 
 // Event with attribute (onclick="" in html) //
-
 function forAttributeEvents() {
   alert("Event with Attributes");
 }
 
 // Event with semantic handler //
-
 function aFunction() {
   alert("Is a function");
 }
@@ -19,7 +17,6 @@ $semanticEvent.onclick = (e) => {
 };
 
 //  Multiple events  //
-
 const $multipleEvents = d.getElementById("multiple-events");
 $multipleEvents.addEventListener("click", aFunction);
 $multipleEvents.addEventListener("click", (e) => {
@@ -27,7 +24,6 @@ $multipleEvents.addEventListener("click", (e) => {
 });
 
 //  Event with parameter  //
-
 function greet(name = "anonymous") {
   alert(`Hello ${name}`);
 }
@@ -37,7 +33,6 @@ $multipleEvents.addEventListener("click", () => {
 });
 
 // Remove event //
-
 const $removeEvent = d.getElementById("remove-event");
 const removeTheEvent = (e) => {
   alert(`Remove type event ${e.type}`);
@@ -46,7 +41,6 @@ const removeTheEvent = (e) => {
 $removeEvent.addEventListener("dblclick", removeTheEvent);
 
 // Event delegation //
-
 function eventDelegation(e) {
   alert(`The origin of the click is ${e.target.className}`);
 }
