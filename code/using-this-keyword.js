@@ -5,7 +5,7 @@ function isAFunction() {
 }
 isAFunction();
 
-// -------- Anonymous Function -------- //
+// Anonymous Function
 
 this.name = "Global";
 const object = {
@@ -16,7 +16,7 @@ const object = {
 };
 object.print();
 
-// -------- Arrow Function -------- // ( Not occupy )
+// Arrow Function ( Not occupy )
 
 const objArrow = {
   name: "obj arrow",
@@ -26,8 +26,7 @@ const objArrow = {
 };
 objArrow.print();
 
-// Methods //
-
+// Methods
 const user = {
   name: "Andres",
   age: 34,
@@ -40,7 +39,7 @@ user.greeting();
 let admin = user;
 admin.greeting();
 
-// -------- Explicit Binding -------- //
+// Explicit Binding
 
 function sayHi(phrase = undefined) {
   console.log(`${this.name}: ${phrase}`);

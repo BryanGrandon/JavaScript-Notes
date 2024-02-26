@@ -1,4 +1,26 @@
-// The function is able to call itself
+// Closures
+
+function init() {
+  let name = "Bryan";
+  displayName(name);
+}
+function displayName(name) {
+  console.log(name);
+}
+init();
+
+// Lexical scoping
+
+function lexical() {
+  let name = "Andres";
+  function scoping(name) {
+    console.log(name);
+  }
+  scoping(name);
+}
+lexical();
+
+// Recursion
 
 let company = {
   sales: [

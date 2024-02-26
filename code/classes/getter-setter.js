@@ -20,7 +20,7 @@ let user2 = new User("Bryan");
 console.log(user2.name);
 console.log(user2);
 
-// ---- Object ---- //
+// Object
 
 const userObj = {
   name: "Bryan",
@@ -39,7 +39,7 @@ console.log(userObj.fullName);
 userObj.fullName = "Brays M";
 console.log(userObj.name, userObj.lastName);
 
-// ---- DefineProperty ---- //
+// DefineProperty
 
 const userObj2 = {
   name: "Bryan",

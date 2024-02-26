@@ -283,13 +283,31 @@ const arrowFunction = () => {};
 (function () {})();
 ```
 
-### _Scope and Function stack_
+### _[Scope and Function stack](/code/function/scope-and-function-stack.js)_
 
 A space or environment in which a particular variable or function can be accessed or used. Accessibility of this variable or function depends on where it is defined.
 
-- [Closures](/code/function/closures.js).
-- [Lexical Scoping](/code/function/lexical-scoping.js).
-- [Recursion](/code/function/recursion.js).
+```js
+// Closures -> Calling a function inside another function.
+function displayName() {}
+function init() {
+  displayName();
+}
+```
+
+```js
+// Lexical Scoping -> Declaring a function inside another function and calling it.
+function lexical() {
+  function scoping() {}
+}
+```
+
+```js
+// Recursion -> The function is able to call itself.
+function recursion() {
+  recursion();
+}
+```
 
 [⬆️ Table of content ⬆️](#table-of-content)
 
@@ -306,6 +324,8 @@ cleaner code and catch errors and bugs that might otherwise go unnoticed.
 // code
 ```
 
+[⬆️ Table of content ⬆️](#table-of-content)
+
 ## [Using (this) keyword](/code/using-this-keyword.js)
 
 In JavaScript, the this keyword is a little different compared to other languages. It refers to an object, but it depends on how or where it is being invoked. It also has some differences strict mode and non-strict mode.
@@ -314,23 +334,29 @@ In JavaScript, the this keyword is a little different compared to other language
 - In arrow function
 - Explicit binding
 
+[⬆️ Table of content ⬆️](#table-of-content)
+
 ## Asynchronous JavaScript
 
 Asynchronous programming is a technique that enables your program to start a potentially long-running task and still be able to be responsive to other events while that task runs, rather than having to wait until that task has finished.
 
-The **[setTimeout](/code/asynchronous/settimerout.js)** runs a function after the specified period expires. Times are declared in milliseconds.
+### _[setTimeout](/code/asynchronous/settimerout.js)_
+
+The setTimeout runs a function after the specified period expires. Times are declared in milliseconds.
 
 ```JS
 // setTimeout (func|code, [delay], [arg1], [arg2], ...)
 ```
 
-**[setInterval](/code/asynchronous/setinterval.js)** is similar to setTimeout, with one difference. Instead of executing the callback function once, it will execute it forever, at the specified time interval
+### _[setInterval](/code/asynchronous/setinterval.js)_
+
+setInterval is similar to setTimeout, with one difference. Instead of executing the callback function once, it will execute it forever, at the specified time interval
 
 ```JS
 // setInterval (func|code, [delay], [arg1], [arg2], ...)
 ```
 
-**Event Loop**
+### _Event Loop_
 
 - Synchronous: The synchronous operation you wait for the result..
 - Asynchronous: The asynchronous operation does not wait for the result.
@@ -343,11 +369,13 @@ the old and error-prone callback approach.
 
 [Async / Await](/code/asynchronous/async-await.js) is a special syntax to work with promises in a more comfortable fashion. We use async keyword to declare a async function that return a Promise, and the await keyword makes a function wait for a Promise.
 
+[⬆️ Table of content ⬆️](#table-of-content)
+
 ## [Classes](/code/classes/classes.js)
 
 Classes are a template for creating objects. They encapsulate data with code to work on that data.
 
-**[Getter Setter](/code/classes/getter-setter.js)**
+### _[Getter Setter](/code/classes/getter-setter.js)_
 
 ```JS
 // Getter, the code executed to get obj.propName
@@ -362,28 +390,34 @@ set fullName(value) {
 
 In programming, [inheritance](/code/classes/inheritance.js) refers to passing down characteristics from a parent to a child so that a new piece of code can reuse and build upon the features of an existing one.
 
-**[Additional](/code/classes/additional.js)**
+### _[Additional](/code/classes/additional.js)_
 
 - Protected properties are usually prefixed with the underscore \_.
 - Privates should start with #. They are only accessible from inside the class.
 
-**[Prototype](/code/classes/prototype.js)**
+### _[Prototype](/code/classes/prototype.js)_
 
 Prototypes are the mechanism by which JavaScript objects inherit features from one another.
+
+[⬆️ Table of content ⬆️](#table-of-content)
 
 ## [Generator](/code/generator.js)
 
 Iterators are objects, governed by the iterator protocol, that allow us to easily iterate
 over a given sequence in a variety of ways, such as using the for...of loop.
 
-## Regular Expressions
+[⬆️ Table of content ⬆️](#table-of-content)
 
-[Regular expressions](/code/regular-expressions.js) are patterns used to match character combinations in strings. In JavaScript, regular expressions are also objects.
+## [Regular Expressions](/code/regular-expressions.js)
+
+Regular expressions are patterns used to match character combinations in strings. In JavaScript, regular expressions are also objects.
 
 - Assertions
 - Quantifiers
 - Character sets
 - Groups and Ranks
+
+[⬆️ Table of content ⬆️](#table-of-content)
 
 ## Modules
 
@@ -392,3 +426,5 @@ Modules encapsulate all sorts of code like functions and variables and expose al
 The [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) declaration is used to export values from a JavaScript module.
 
 The [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) syntax, commonly called dynamic import, is a function-like expression that allows loading an ECMAScript modules asynchronously and dynamically into a potentially non-module environment.
+
+[⬆️ Table of content ⬆️](#table-of-content)
