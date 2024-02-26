@@ -1,5 +1,4 @@
 let now = new Date();
-
 let date = new Date(2000, 11, 19);
 
 const componentsOfDate = {

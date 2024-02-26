@@ -1,6 +1,5 @@
-/* Map //
-    Maps are used to store a collection of elements defined by a key and value.
-*/
+// Map
+
 const map = new Map();
 map.set("key", "value"); // Define the Key and its Value
 
@@ -11,16 +10,11 @@ const methodsMapOrSet = {
   clear: map.clear(),
 };
 let getOfValueMap = map.get("key");
-
-// weakMap //
-
-const weakMap = new WeakMap();
+const weakMap = new WeakMap(); // weakMap
 let object = { name: "Bryan" }; // Define the Value and the key has to be an object
 weakMap.set(object, "...");
 
-/* Set //
-    Sets allow us to store collections of information, specifically values that will not be repeated.
-*/
+// Set
 
 const set = new Set();
 const arr = [1, 2, 3];
@@ -28,10 +22,7 @@ const arr = [1, 2, 3];
 set.add(2);
 set.add(2); // Does not support repeated values
 set.add(arr);
-
-// weakSet //
-
-const weakSet = new WeakSet();
+const weakSet = new WeakSet(); // weakSet
 const obj_1 = { name: "obj 1" };
 const obj_2 = { name: "obj 2" };
 weakSet.add(obj_1);

@@ -33,96 +33,225 @@ JavaScript is a programming language that developers use to make interactive web
 
 ## All about variables
 
-To store and represent information in JavaScript code, we use variables.
+A variable in JavaScript is this programming language's way of naming a value so that it can be reused, updated or simply registered. To declare a variable you have to use keywords such as `var`, `let` and `const` these will have different scope.
 
-A variable is the container of a value and to use them it is necessary to declare them using one of the keywords such as **[var](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)**, **[let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)** and **[const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)**.
+Hoisting is a behavior in JavaScript where variable and function declarations are moved to the beginning of the scope they are in, before other lines of code in the same scope are executed.
 
-Depending on the **keyword** used it will have a certain **[scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope)** this refers to the visibility of a variable or how it can be used after being declared.
-
-The concept of **[Hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)** was intended as a general way of referring to how execution contexts work in JavaScript.
+[⬆️ Table of content ⬆️](#table-of-content)
 
 ## Data Types
 
-We refer to the data types that we can assign to JavaScript variables. Furthermore, data types are divided into two groups, which are **[primitive types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)** and **[objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)**.
+We refer to the data types that we can assign to JavaScript variables. Furthermore, data types are divided into two groups, which are primitive types and objects.
 
-| Primitive Types                                          | Code                        |
-| -------------------------------------------------------- | --------------------------- |
-| [String](/code/data-type/primitive-type/string.js)       | `let string = "string";`    |
-| [Number](/code/data-type/primitive-type/number.js)       | `let number = 21;`          |
-| [BigInt](/code/data-type/primitive-type/bigint.js)       | `let bigInt = 1e9n;`        |
-| [Boolean](/code/data-type/primitive-type/boolean.js)     | `let boolean = true;`       |
-| [Null](/code/data-type/primitive-type/null.js)           | `let nothing = null;`       |
-| [Undefined](/code/data-type/primitive-type/undefined.js) | `let isUndefined;`          |
-| [Symbol](/code/data-type/primitive-type/symbol.js)       | `let symbol = Symbol("id")` |
+### _[Primitive type](/code/data-type/primitive-type.js)_
 
-The [Object](/code/data-type/objects/object.js) and build in object are [Console object](/code/data-type/objects/console.js), [Date object](/code/data-type/objects/date.js), [Math object](/code/data-type/objects/math.js).
+Primitive type is data that is not an object and has no methods or properties.
+
+```js
+let string = "Way of writing string";
+
+let number = 25;
+
+let bigInt = 9007199254740992n;
+
+let boolean = [true, false];
+
+let null = ["Nothing", "Empty"];
+
+let isUndefined;
+
+let symbol = Symbol("id");
+```
+
+### _[Object](/code/data-type/object.js)_
+
+The JavaScript object is a data structure that allows us to have key-value pairs.
+
+```js
+const object = {
+  key: "value",
+};
+
+// Methods
+object.keyName = "value"; // Add
+delete object.keyName; // Delete
+let access = object.key; // Access
+let existingProperty = "key" in object; // Existing Property
+```
+
+The build in object are [Console object](/code/data-type/console.js), [Date object](/code/data-type/date.js), [Math object](/code/data-type/math.js).
+
+[⬆️ Table of content ⬆️](#table-of-content)
 
 ## Type casting
 
 Type conversion means the transfer of data from one data type to another.
 
-**Explicit Type Casting.**
-
 ```js
+// Explicit Type Casting.
 let number = parseInt("25.5");
 let float = parseFloat("25.5");
 let string = number.toString();
 ```
 
-**Implicit Type Casting.**
-
 ```js
+// Implicit Type Casting.
 let numberOrString = "4" - "2";
 ```
 
-**Type Conversions.**
-
 ```js
+// Type Conversions.
 String();
 Number();
 Boolean();
 ```
 
+[⬆️ Table of content ⬆️](#table-of-content)
+
 ## Data Structure
 
 A Data structure is a format to organize, manage and store data in a way that allows efficient
 
-The [Array](/code/data-structure/array.js) it stores multiple values and elements in one variable.
+### _[Array](/code/data-structure/array.js)_
+
+The Array it stores multiple values and elements in one variable.
 
 ```js
 let arr = ["Element 1", "Element 2", "Element 3"];
+let element1 = arr[0]; // Access to element
 ```
 
-[Keyed Collection](/code/data-structure/keyed-collection.js) are data collections that are ordered by key not index.
+### _[Keyed Collection](/code/data-structure/keyed-collection.js)_
+
+Keyed Collection are data collections that are ordered by key not index.
 
 ```js
-let set = new set();
+// Maps are used to store a collection of elements defined by a key and value
 let map = new map();
+
+// Sets allow us to store collections of information, specifically values that will not be repeated.
+let set = new set();
 ```
 
-[JSON](/code/data-structure/json.js) is a lightweight data interchange format, easy to read, write and parse for users and generate for machines.
+### _[JavaScript Object Notion](/code/data-structure/json.js)_
+
+JSON is a lightweight data interchange format, easy to read, write and parse for users and generate for machines.
+
+```json
+{
+  "name": "Bryan",
+  "age": 21,
+  "isAdmin": false,
+  "courses": ["html", "css", "js"],
+  "something": "undefined"
+}
+```
+
+[⬆️ Table of content ⬆️](#table-of-content)
 
 ## Equality comparisons
 
 Comparison operators are used in logical statements to determine equality or
-difference between variables or values. Is Loosely Equal ( `==` ), is Strictly Equal ( `===` ), same Value ( `Object.is()` ).
+difference between variables or values. Is **Loosely Equal** ( `==` ), is **Strictly Equal** ( `===` ), **same Value** ( `Object.is()` ).
+
+[⬆️ Table of content ⬆️](#table-of-content)
 
 ## Loops and Iterations
 
-Loops offer a quick and easy way to do something repeatedly. there are different ways to create a loop such as **[for](/code/loops/for.js)**, **[do while](/code/loops/do-while.js)** and **[while](/code/loops/while.js)**.
+Loops offer a quick and easy way to do something repeatedly. there are different ways to create a loop such as `for`, `do while` and `while`.
 
-Use the **[break statement](/code/loops/break.js)** to terminate a loop, switch, or in conjunction with a labeled statement. <br/>
-The **[continue statement](/code/loops/continue.js)** can be used to restart a while, do-while, for, or label statement.
+### _For_
+
+```js
+// for (initialization; condition; afterthought) { statement }
+let str = "";
+for (let i = 0; i <= 5; i++) {
+  str += i;
+}
+```
+
+### _While_
+
+```js
+// The condition is evaluated before executing the statement.
+let i = 0;
+while (i < 5) {
+  i += 1; //so that it is not an infinite loop
+}
+
+// do Wile
+
+// The condition is evaluated after executing the statement.
+do {
+  i += 1; //so that it is not an infinite loop
+} while (i > 10);
+```
+
+Use the break statement to terminate a loop, switch, or in conjunction with a labeled statement. <br/>
+The continue statement can be used to restart a while, do-while, for, or label statement.
+
+```js
+// Break
+
+for (let i = 0; i < 100; i++) {
+  if (i === 5) break;
+}
+
+label: for (let i = 0; i < 5; i++) {
+  for (let x = 1; x <= 3; x++) {
+    if (x === 3) break label;
+  }
+}
+
+// Continue
+
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) continue;
+}
+```
+
+[⬆️ Table of content ⬆️](#table-of-content)
 
 ## Control flow
 
 Code is run in order from the first line in the file to the last line, unless the computer runs across the (extremely frequent) structures that change the control flow, such as conditionals and loops.
 
-**Conditional statements** control behavior in JavaScript and determine whether or not pieces of code can run. They can be [if ... else](/code/control-flow/if.js) and [Switch](/code/control-flow/switch.js).
+### _[Conditional statements](/code/control-flow/conditional-statements.js)_
 
-[Exception handling](/code/control-flow/exception-hendling.js) The code in the `try` block is executed first, and if it throws an exception, the code in the `catch` block will be executed.
+Conditional statements control behavior in JavaScript and determine whether or not pieces of code can run. They can be `if...else` and `Switch`.
 
-[Proxies]() allow you to modify, validate, or override the fault behavior
+```js
+if (conditional) {
+  // Code to execute
+} else {
+  // Code to execute
+}
+
+switch (option) {
+  case 1:
+    // Code to execute
+    break;
+  case 2:
+    // Code to execute
+    break;
+}
+```
+
+### _[Exception handling](/code/control-flow/exception-hendling.js)_
+
+The code in the `try` block is executed first, and if it throws an exception, the code in the `catch` block will be executed.
+
+```js
+try {
+  // Code to execute
+} catch (error) {
+  // Code to execute
+}
+```
+
+[Proxies](/code/control-flow/proxies.js) allow you to modify, validate, or override the fault behavior
+
+[⬆️ Table of content ⬆️](#table-of-content)
 
 ## Operator
 
@@ -133,16 +262,26 @@ Operators allow you to manipulate the value of variables, perform mathematical o
 - [Logical operator](/code/operator/logical.js)
 - [Ternary operator](/code/operator/ternary.js)
 
-<!-- Here -->
+[⬆️ Table of content ⬆️](#table-of-content)
 
 ## [Function](/code/function/function.js)
 
-Functions exist so that we can reuse code. They are blocks of code that are executed each time
-they are invoked. Each function is usually written to perform a specific task.
+Functions exist so that we can reuse code. They are blocks of code that are executed each time they are invoked. Each function is usually written to perform a specific task.
 
-- [Function expressions](/code/function/function-expressions.js).
-- [Arrow function](/code/function/arrow-function.js).
-- [IIFE](/code/function/iife.js).
+```js
+// Function expressions
+const anonymousFunction = function () {};
+```
+
+```js
+// Arrow Function
+const arrowFunction = () => {};
+```
+
+```js
+// Immediately Invoked Function Expression
+(function () {})();
+```
 
 ### _Scope and Function stack_
 
@@ -151,6 +290,8 @@ A space or environment in which a particular variable or function can be accesse
 - [Closures](/code/function/closures.js).
 - [Lexical Scoping](/code/function/lexical-scoping.js).
 - [Recursion](/code/function/recursion.js).
+
+[⬆️ Table of content ⬆️](#table-of-content)
 
 ## Strict mode
 
