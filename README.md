@@ -37,7 +37,7 @@ A variable in JavaScript is this programming language's way of naming a value so
 
 Hoisting is a behavior in JavaScript where variable and function declarations are moved to the beginning of the scope they are in, before other lines of code in the same scope are executed.
 
-[⬆️ Table of content ⬆️](#table-of-content)
+[⬆️ Back to top ⬆️](#javascript-notes)
 
 ## Data Types
 
@@ -81,7 +81,7 @@ let existingProperty = "key" in object; // Existing Property
 
 The build in object are [Console object](/code/data-type/console.js), [Date object](/code/data-type/date.js), [Math object](/code/data-type/math.js).
 
-[⬆️ Table of content ⬆️](#table-of-content)
+[⬆️ Back to top ⬆️](#javascript-notes)
 
 ## Type casting
 
@@ -106,7 +106,7 @@ Number();
 Boolean();
 ```
 
-[⬆️ Table of content ⬆️](#table-of-content)
+[⬆️ Back to top ⬆️](#javascript-notes)
 
 ## Data Structure
 
@@ -147,14 +147,14 @@ JSON is a lightweight data interchange format, easy to read, write and parse for
 }
 ```
 
-[⬆️ Table of content ⬆️](#table-of-content)
+[⬆️ Back to top ⬆️](#javascript-notes)
 
 ## Equality comparisons
 
 Comparison operators are used in logical statements to determine equality or
 difference between variables or values. Is **Loosely Equal** ( `==` ), is **Strictly Equal** ( `===` ), **same Value** ( `Object.is()` ).
 
-[⬆️ Table of content ⬆️](#table-of-content)
+[⬆️ Back to top ⬆️](#javascript-notes)
 
 ## Loops and Iterations
 
@@ -210,7 +210,7 @@ for (let i = 1; i <= 5; i++) {
 }
 ```
 
-[⬆️ Table of content ⬆️](#table-of-content)
+[⬆️ Back to top ⬆️](#javascript-notes)
 
 ## Control flow
 
@@ -251,7 +251,7 @@ try {
 
 [Proxies](/code/control-flow/proxies.js) allow you to modify, validate, or override the fault behavior
 
-[⬆️ Table of content ⬆️](#table-of-content)
+[⬆️ Back to top ⬆️](#javascript-notes)
 
 ## Operator
 
@@ -262,7 +262,7 @@ Operators allow you to manipulate the value of variables, perform mathematical o
 - [Logical operator](/code/operator/logical.js)
 - [Ternary operator](/code/operator/ternary.js)
 
-[⬆️ Table of content ⬆️](#table-of-content)
+[⬆️ Back to top ⬆️](#javascript-notes)
 
 ## [Function](/code/function/function.js)
 
@@ -309,7 +309,7 @@ function recursion() {
 }
 ```
 
-[⬆️ Table of content ⬆️](#table-of-content)
+[⬆️ Back to top ⬆️](#javascript-notes)
 
 ## Strict mode
 
@@ -324,7 +324,7 @@ cleaner code and catch errors and bugs that might otherwise go unnoticed.
 // code
 ```
 
-[⬆️ Table of content ⬆️](#table-of-content)
+[⬆️ Back to top ⬆️](#javascript-notes)
 
 ## [Using (this) keyword](/code/using-this-keyword.js)
 
@@ -334,7 +334,7 @@ In JavaScript, the this keyword is a little different compared to other language
 - In arrow function
 - Explicit binding
 
-[⬆️ Table of content ⬆️](#table-of-content)
+[⬆️ Back to top ⬆️](#javascript-notes)
 
 ## Asynchronous JavaScript
 
@@ -369,7 +369,7 @@ the old and error-prone callback approach.
 
 [Async / Await](/code/asynchronous/async-await.js) is a special syntax to work with promises in a more comfortable fashion. We use async keyword to declare a async function that return a Promise, and the await keyword makes a function wait for a Promise.
 
-[⬆️ Table of content ⬆️](#table-of-content)
+[⬆️ Back to top ⬆️](#javascript-notes)
 
 ## [Classes](/code/classes/classes.js)
 
@@ -399,14 +399,14 @@ In programming, [inheritance](/code/classes/inheritance.js) refers to passing do
 
 Prototypes are the mechanism by which JavaScript objects inherit features from one another.
 
-[⬆️ Table of content ⬆️](#table-of-content)
+[⬆️ Back to top ⬆️](#javascript-notes)
 
 ## [Generator](/code/generator.js)
 
 Iterators are objects, governed by the iterator protocol, that allow us to easily iterate
 over a given sequence in a variety of ways, such as using the for...of loop.
 
-[⬆️ Table of content ⬆️](#table-of-content)
+[⬆️ Back to top ⬆️](#javascript-notes)
 
 ## [Regular Expressions](/code/regular-expressions.js)
 
@@ -417,7 +417,7 @@ Regular expressions are patterns used to match character combinations in strings
 - Character sets
 - Groups and Ranks
 
-[⬆️ Table of content ⬆️](#table-of-content)
+[⬆️ Back to top ⬆️](#javascript-notes)
 
 ## Modules
 
@@ -427,4 +427,4 @@ The [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/S
 
 The [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) syntax, commonly called dynamic import, is a function-like expression that allows loading an ECMAScript modules asynchronously and dynamically into a potentially non-module environment.
 
-[⬆️ Table of content ⬆️](#table-of-content)
+[⬆️ Back to top ⬆️](#javascript-notes)
