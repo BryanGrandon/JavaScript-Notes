@@ -5,24 +5,39 @@ This project is to have a record of what I have learned about JavaScript. Also t
 - [Document Object Model (DOM)](/docs/dom.md)
 - [Application Programming Interface (APIs)](/docs/api.md)
 - [Projects](/docs/projects.md)
-- [Typescript](/docs/typescript.md)
 
 ## Table of content
 
 - [What is Javascript](#what-is-javascript)
 - [All about variables](#all-about-variables)
 - [Data Types](#data-types)
+  - [Primitive type](#primitive-type)
+  - [Object](#object)
 - [Type casting](#type-casting)
 - [Data Structure](#data-structure)
+  - [Array](#array)
+  - [Keyed collection](#keyed-collection)
+  - [JSON](#javascript-object-notion)
 - [Equality comparisons](#equality-comparisons)
 - [Loops and Iterations](#loops-and-iterations)
+  - [For](#for)
+  - [While](#while)
 - [Control flow](#control-flow)
+  - [Conditional statements](#conditional-statements)
+  - [Exception handling](#exception-handling)
 - [Operator](#operator)
 - [Function](#function)
+  - [Scope and function stack](#scope-and-function-stack)
 - [Strict mode](#strict-mode)
 - [Using (this) keyword](#using-this-keyword)
 - [Asynchronous JavaScript](#asynchronous-javascript)
+  - [setTimeout](#settimeout)
+  - [setInterval](#setinterval)
+  - [Event loop](#event-loop)
 - [Classes](#classes)
+  - [Getter setter](#getter-setter)
+  - [Additional](#additional)
+  - [Prototype](#prototype)
 - [Generator](#generator)
 - [Regular Expressions](#regular-expressions)
 - [Modules](#modules)
@@ -121,7 +136,7 @@ let arr = ["Element 1", "Element 2", "Element 3"];
 let element1 = arr[0]; // Access to element
 ```
 
-### _[Keyed Collection](/code/data-structure/keyed-collection.js)_
+### _[Keyed collection](/code/data-structure/keyed-collection.js)_
 
 Keyed Collection are data collections that are ordered by key not index.
 
