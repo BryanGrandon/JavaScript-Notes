@@ -2,101 +2,29 @@
 
 This project is to have a record of what I have learned about JavaScript. Also to add or update content already seen to make it more readable.
 
-- [Document Object Model (DOM)](/docs/dom.md)
-- [Application Programming Interface (APIs)](/docs/api.md)
+- [DOM](/docs/dom.md)
+- [API](/docs/api.md)
 - [Projects](/docs/projects.md)
 
 ## Table of content
 
-- [What is Javascript](#what-is-javascript)
-- [All about variables](#all-about-variables)
-- [Data Types](#data-types)
-  - [Primitive type](#primitive-type)
-  - [Object](#object)
+- [What is Javascript](/docs/code/01-what-is-javascript.md)
+- [All about variables](/docs/code/02-all-about-variables.md)
+- [Data Types](/docs/code/03-data-types.md)
 - [Type casting](#type-casting)
 - [Data Structure](#data-structure)
-  - [Array](#array)
-  - [Keyed collection](#keyed-collection)
-  - [JSON](#javascript-object-notion)
 - [Equality comparisons](#equality-comparisons)
 - [Loops and Iterations](#loops-and-iterations)
-  - [For](#for)
-  - [While](#while)
 - [Control flow](#control-flow)
-  - [Conditional statements](#conditional-statements)
-  - [Exception handling](#exception-handling)
 - [Operator](#operator)
 - [Function](#function)
-  - [Scope and function stack](#scope-and-function-stack)
 - [Strict mode](#strict-mode)
 - [Using (this) keyword](#using-this-keyword)
 - [Asynchronous JavaScript](#asynchronous-javascript)
-  - [setTimeout](#settimeout)
-  - [setInterval](#setinterval)
-  - [Event loop](#event-loop)
 - [Classes](#classes)
-  - [Getter setter](#getter-setter)
-  - [Additional](#additional)
-  - [Prototype](#prototype)
 - [Generator](#generator)
 - [Regular Expressions](#regular-expressions)
 - [Modules](#modules)
-
-## What is JavaScript?
-
-JavaScript is a programming language that developers use to make interactive web pages.
-
-## All about variables
-
-A variable in JavaScript is this programming language's way of naming a value so that it can be reused, updated or simply registered. To declare a variable you have to use keywords such as `var`, `let` and `const` these will have different scope.
-
-Hoisting is a behavior in JavaScript where variable and function declarations are moved to the beginning of the scope they are in, before other lines of code in the same scope are executed.
-
-[⬆️ Back to top ⬆️](#javascript-notes)
-
-## Data Types
-
-We refer to the data types that we can assign to JavaScript variables. Furthermore, data types are divided into two groups, which are primitive types and objects.
-
-### _[Primitive type](/code/data-type/primitive-type.js)_
-
-Primitive type is data that is not an object and has no methods or properties.
-
-```js
-let string = "Way of writing string";
-
-let number = 25;
-
-let bigInt = 9007199254740992n;
-
-let boolean = [true, false];
-
-let null = ["Nothing", "Empty"];
-
-let isUndefined;
-
-let symbol = Symbol("id");
-```
-
-### _[Object](/code/data-type/object.js)_
-
-The JavaScript object is a data structure that allows us to have key-value pairs.
-
-```js
-const object = {
-  key: "value",
-};
-
-// Methods
-object.keyName = "value"; // Add
-delete object.keyName; // Delete
-let access = object.key; // Access
-let existingProperty = "key" in object; // Existing Property
-```
-
-The build in object are [Console object](/code/data-type/console.js), [Date object](/code/data-type/date.js), [Math object](/code/data-type/math.js).
-
-[⬆️ Back to top ⬆️](#javascript-notes)
 
 ## Type casting
 
