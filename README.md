@@ -4,7 +4,6 @@ This project is to have a record of what I have learned about JavaScript. Also t
 
 - [DOM](/docs/dom.md)
 - [API](/docs/api.md)
-- [Projects](/docs/projects.md)
 
 ## Table of content
 
