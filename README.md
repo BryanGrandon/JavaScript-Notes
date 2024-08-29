@@ -7,10 +7,8 @@ This project is to have a record of what I have learned about JavaScript. Also t
 
 ## Table of content
 
-- [What is Javascript](/docs/code/01-what-is-javascript.md)
-- [All about variables](/docs/code/02-all-about-variables.md)
-- [Data Types](/docs/code/03-data-types.md)
-- [Type casting](/docs/code/04-type-casting.md)
+- [General Information](/docs/code/general-information.md)
+- [Data Types](/docs/code/data-types.md)
 - [Data Structure](/docs/code/05-data-structure.md)
 - [Equality comparisons](/docs/code/06-equality-comparisons.md)
 - [Loops and Iterations](/docs/code/07-loops-and-iterations.md)
