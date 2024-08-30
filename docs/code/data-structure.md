@@ -2,18 +2,15 @@
 
 A Data structure is a format to organize, manage and store data in a way that allows efficient
 
-## Array
+## [Array](/code/data-structure/array.js)
 
 The Array it stores multiple values and elements in one variable.
 
 ```js
 let arr = ["Element 1", "Element 2", "Element 3"];
-let element1 = arr[0]; // Access to element
 ```
 
-[Methods](/code/05-data-structure/array.js)
-
-## Keyed collection
+## [Keyed collection](/code/data-structure/keyed-collection.js)
 
 Keyed Collection are data collections that are ordered by key not index.
 
@@ -25,9 +22,7 @@ let map = new map();
 let set = new set();
 ```
 
-[Methods](/code/05-data-structure/keyed-collection.js)
-
-## JavaScript Object Notion
+## [JavaScript Object Notion](/code/data-structure/json.js)
 
 JSON is a lightweight data interchange format, easy to read, write and parse for users and generate for machines.
 
@@ -40,9 +35,5 @@ JSON is a lightweight data interchange format, easy to read, write and parse for
   "something": "undefined"
 }
 ```
-
-[Methods](/code/05-data-structure/json.js)
-
----
 
 [📒 Back to main note.📒](/README.md)

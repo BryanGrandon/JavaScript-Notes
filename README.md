@@ -9,7 +9,7 @@ This project is to have a record of what I have learned about JavaScript. Also t
 
 - [General Information](/docs/code/general-information.md)
 - [Data Types](/docs/code/data-types.md)
-- [Data Structure](/docs/code/05-data-structure.md)
+- [Data Structure](/docs/code/data-structure.md)
 - [Loops and Iterations](/docs/code/07-loops-and-iterations.md)
 - [Control flow](/docs/code/08-control-flow.md)
 - [Operator](/docs/code/09-operator.md)
