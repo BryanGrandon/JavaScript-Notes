@@ -24,7 +24,7 @@ JavaScript is an interpreted programming language used on the client-side (front
 - [Classes](#classes)
 - [Generator](#generator)
 - [Regular Expressions](#regular-expressions)
-- [Modules](/docs/code/17-modules.md)
+- [Modules](#modules)
 
 ## General information
 
@@ -310,3 +310,11 @@ Regular expressions are patterns used to match character combinations in strings
 - Quantifiers
 - Character sets
 - Groups and Ranks
+
+## Modules
+
+Modules encapsulate all sorts of code like functions and variables and expose all this to other files.
+
+- The `export` declaration is used to export values from a JavaScript module.
+
+- The `import` syntax, commonly called dynamic import, is a function-like expression that allows loading an ECMAScript modules asynchronously and dynamically into a potentially non-module environment.
