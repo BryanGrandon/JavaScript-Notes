@@ -19,7 +19,7 @@ JavaScript is an interpreted programming language used on the client-side (front
 - [Control flow](#control-flow)
 - [Operator](#operator)
 - [Function](#function)
-- [Using (this) keyword](/docs/code/12-using-this-keyword.md)
+- [Using (this) keyword](#using-this-keyword)
 - [Asynchronous JavaScript](/docs/code/13-asynchronous.md)
 - [Classes](/docs/code/14-classes.md)
 - [Generator](/docs/code/15-generator.md)
@@ -231,39 +231,22 @@ Functions exist so that we can reuse code. They are blocks of code that are exec
 function isFunction() {}
 ```
 
-- Function expressions
-  ```js
-  const anonymousFunction = function () {};
-  ```
-- Arrow Function
-  ```js
-  const arrowFunction = () => {};
-  ```
-- Immediately Invoked Function Expression
-  ```js
-  (function () {})();
-  ```
+- Function expressions.
+- Arrow Function.
+- Immediately Invoked Function Expression.
 
 ### [Scope and Function stack](/code/function/scope-and-function-stack.js)
 
 A space or environment in which a particular variable or function can be accessed or used. Accessibility of this variable or function depends on where it is defined.
 
-- The closures is when we call a function within another function.
-  ```js
-  function displayName() {}
-  function init() {
-    displayName();
-  }
-  ```
-- The lexical scope is when you declare a function inside another function and call it.
-  ```js
-  function lexical() {
-    function scoping() {}
-  }
-  ```
-- The recursion is when the function is able to call itself.
-  ```js
-  function recursion() {
-    recursion();
-  }
-  ```
+- The `closures` is when we call a function within another function.
+- The `lexical scope` is when you declare a function inside another function and call it.
+- The `recursion` is when the function is able to call itself.
+
+## [Using (this) keyword](/code/using-this-keyword.js)
+
+In JavaScript, the this keyword is a little different compared to other languages. It refers to an object, but it depends on how or where it is being invoked. It also has some differences strict mode and non-strict mode.
+
+- In anonymous function
+- In arrow function
+- Explicit binding
