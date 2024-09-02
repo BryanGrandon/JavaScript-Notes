@@ -107,17 +107,14 @@ Type conversion means the transfer of data from one data type to another.
 
 In computer science, a data structure is a format to organize, manage and store data in a way that allows efficient access and modification.
 
-- [Array](/code/data-structure/array.js)
-
-  The Array it stores multiple values and elements in one variable.
+- The [Array](/code/data-structure/array.js) it stores multiple values and elements in one variable.
 
   ```js
   let arr = ["Element 1", "Element 2", "Element 3"];
   ```
 
 - [Keyed collection](/code/data-structure/keyed-collection.js)
-
-  Keyed Collection are data collections that are ordered by key not index.
+  are data collections that are ordered by key not index.
 
   ```js
   let map = new map();
@@ -125,8 +122,7 @@ In computer science, a data structure is a format to organize, manage and store 
   ```
 
 - [JavaScript object notion (JSON)](/code/data-structure/json.js)
-
-  JSON is a lightweight data interchange format, easy to read, write and parse for users and generate for machines.
+  is a lightweight data interchange format, easy to read, write and parse for users and generate for machines.
 
   ```json
   {
@@ -142,21 +138,16 @@ In computer science, a data structure is a format to organize, manage and store 
 
 Loops offer a quick and easy way to do something repeatedly. There are different ways to create a loop.
 
-- `for`
-
-  Creates a loop consisting of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement executed in a loop.
+- The `for` statement creates a loop consisting of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement executed in a loop.
 
   ```js
   // for (initialization; condition; afterthought) { statement }
-
   for (let i = 0; i <= 5; i++) {
     console.log(i);
   }
   ```
 
-- `while`
-
-  Creates a loop that executes a specified statement as long as a certain condition evaluates to true. This condition is evaluated before executing the statement.
+- The `while` statement creates a loop that executes a specified statement as long as a certain condition evaluates to true. This condition is evaluated before executing the statement.
 
   ```js
   let i = 0;
@@ -168,9 +159,7 @@ Loops offer a quick and easy way to do something repeatedly. There are different
   - Use the `break` statement to terminate a loop, switch, or in conjunction with a labeled statement.
   - The `continue` statement can be used to restart a while, do-while, for, or label statement.
 
-- `do while`
-
-  The do...while statement creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated after executing the statement
+- The `do...while` statement creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated after executing the statement
 
   ```js
   let i = 0;
@@ -178,3 +167,46 @@ Loops offer a quick and easy way to do something repeatedly. There are different
     i += 1; //so that it is not an infinite loop
   } while (i > 10);
   ```
+
+## Control flow
+
+Code is run in order from the first line in the file to the last line, unless the computer runs across the (extremely frequent) structures that change the control flow, such as conditionals and loops.
+
+### [Conditional statements](/code/control-flow/conditional-statements.js)
+
+Conditional statements control behavior in JavaScript and determine whether or not pieces of code can run.
+
+1. The `if...else` statement executes a statement, if a specified condition evaluates to true. If the condition evaluates to false, another statement in the optional else clause will be executed.
+   ```js
+   if (conditional) {
+     // Code to execute
+   } else {
+     // Code to execute
+   }
+   ```
+2. The `switch` statement evaluates an expression, comparing the value of the expression with a series of case clauses. The default clause of a switch statement will be jumped to if no case matches the value of the expression.
+
+```js
+switch (option) {
+  case 1:
+    // Code to execute
+    break;
+  case 2:
+    // Code to execute
+    break;
+}
+```
+
+### [Exception handling](/code/control-flow/exception-hendling.js)
+
+The code in the `try` block is executed first, and if it throws an exception, the code in the `catch` block will be executed.
+
+```js
+try {
+  // Code to execute
+} catch (error) {
+  // Code to execute
+}
+```
+
+<!-- [Proxies](/code/control-flow/proxies.js) allow you to modify, validate, or override the fault behavior -->
