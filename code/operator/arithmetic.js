@@ -4,7 +4,7 @@ const math = {
   multiplication: " * ",
   division: " / ",
   exponentiation: " ** ",
-  modules: "%",
+  modulus: "%",
   increment: "++",
   decrement: "--",
 };

@@ -16,8 +16,8 @@ JavaScript is an interpreted programming language used on the client-side (front
 - [Data Types.](#data-type)
 - [Data Structure.](#data-structure)
 - [Loops and Iterations.](#loops-and-interactions)
-- [Control flow](/docs/code/08-control-flow.md)
-- [Operator](/docs/code/09-operator.md)
+- [Control flow](#control-flow)
+- [Operator](#operator)
 - [Function](/docs/code/10-function.md)
 - [Using (this) keyword](/docs/code/12-using-this-keyword.md)
 - [Asynchronous JavaScript](/docs/code/13-asynchronous.md)
@@ -186,16 +186,16 @@ Conditional statements control behavior in JavaScript and determine whether or n
    ```
 2. The `switch` statement evaluates an expression, comparing the value of the expression with a series of case clauses. The default clause of a switch statement will be jumped to if no case matches the value of the expression.
 
-```js
-switch (option) {
-  case 1:
-    // Code to execute
-    break;
-  case 2:
-    // Code to execute
-    break;
-}
-```
+   ```js
+   switch (option) {
+     case 1:
+       // Code to execute
+       break;
+     case 2:
+       // Code to execute
+       break;
+   }
+   ```
 
 ### [Exception handling](/code/control-flow/exception-hendling.js)
 
@@ -210,3 +210,15 @@ try {
 ```
 
 <!-- [Proxies](/code/control-flow/proxies.js) allow you to modify, validate, or override the fault behavior -->
+
+## Operator
+
+Operators allow you to manipulate the value of variables, perform mathematical operations with their values and compare different variables.
+
+- [Arithmetic operator.](/code/operator/arithmetic.js)
+  - Addition , Subtraction , Multiplication , Division , Modulus , Exponentiation , Increment , Decrement.
+- [Comparison operator.](/code/operator/comparison.js)
+  - Greater than , Smaller than , Greater than or equal , Smaller than or equal , Equal , Distinct.
+- [Logical operator.](/code/operator/logical.js)
+  - or , and , not , default value.
+- [Ternary operator.](/code/operator/ternary.js)
