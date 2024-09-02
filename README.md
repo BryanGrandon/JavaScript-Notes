@@ -22,7 +22,7 @@ JavaScript is an interpreted programming language used on the client-side (front
 - [Using (this) keyword](#using-this-keyword)
 - [Asynchronous JavaScript](#asynchronous-javascript)
 - [Classes](#classes)
-- [Generator](/docs/code/15-generator.md)
+- [Generator](#generator)
 - [Regular Expressions](/docs/code/16-regular-expressions.md)
 - [Modules](/docs/code/17-modules.md)
 
@@ -288,3 +288,16 @@ Classes are a template for creating objects. They encapsulate data with code to 
   - Privates should start with #. They are only accessible from inside the class.
 
 - [Prototypes](/code/classes/prototype.js) are the mechanism by which JavaScript objects inherit features from one another.
+
+## [Generator](/code/generator.js)
+
+Iterators are objects, governed by the iterator protocol, that allow us to easily iterate
+over a given sequence in a variety of ways, such as using the for...of loop.
+
+```js
+function* generateSequence() {
+  yield 1;
+  yield 2;
+  return 3;
+}
+```
