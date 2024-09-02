@@ -13,7 +13,7 @@ JavaScript is an interpreted programming language used on the client-side (front
 ## Table of content
 
 - [General Information](#general-information)
-- [Data Types](/docs/code/data-types.md)
+- [Data Types](#data-type)
 - [Data Structure](/docs/code/data-structure.md)
 - [Loops and Iterations](/docs/code/07-loops-and-iterations.md)
 - [Control flow](/docs/code/08-control-flow.md)
@@ -62,3 +62,43 @@ cleaner code and catch errors and bugs that might otherwise go unnoticed.
 "use strict";
 // code
 ```
+
+## Data type
+
+JavaScript provides different data types to hold different types of values. There are two types of data types in JavaScript.
+
+1. [Primitive data types](/code/data-types/primitive-type.js)
+
+   All types except Object define immutable values represented directly at the lowest level of the language. We refer to values of these types as primitive values.
+
+   ```js
+   let string = "text string";
+   let number = 21;
+   let bigInt = 22212121213423412312n;
+   let boolean = [true, false];
+   let isNull = null;
+   let isUndefined;
+   let symbol = Symbol();
+   ```
+
+2. Non-primitive data type (object)
+
+   In computer science, an object is a value in memory which is possibly referenced by an identifier. In JavaScript, objects are the only mutable values. Functions are, in fact, also objects with the additional capability of being callable.
+
+   - [Object.](/code/data-types/object-type.js)
+   - Array.
+   - Maps.
+   - WeakMaps.
+   - Sets.
+   - WeakSets.
+   - [Console.](/code/data-types/build-in/console.js)
+   - [Date.](/code/data-types/build-in/date.js)
+   - [Math.](/code/data-types/build-in/math.js)
+
+### [Type Conversion](/code/data-types/type-conversion.js)
+
+Type conversion means the transfer of data from one data type to another.
+
+- Explicit type casting
+- Implicit Type Casting
+- Type Conversions
