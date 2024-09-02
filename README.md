@@ -15,7 +15,7 @@ JavaScript is an interpreted programming language used on the client-side (front
 - [General Information.](#general-information)
 - [Data Types.](#data-type)
 - [Data Structure.](#data-structure)
-- [Loops and Iterations](/docs/code/07-loops-and-iterations.md)
+- [Loops and Iterations.](#loops-and-interactions)
 - [Control flow](/docs/code/08-control-flow.md)
 - [Operator](/docs/code/09-operator.md)
 - [Function](/docs/code/10-function.md)
@@ -136,4 +136,45 @@ In computer science, a data structure is a format to organize, manage and store 
     "courses": ["html", "css", "js"],
     "something": "undefined"
   }
+  ```
+
+## Loops and interactions
+
+Loops offer a quick and easy way to do something repeatedly. There are different ways to create a loop.
+
+- `for`
+
+  Creates a loop consisting of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement executed in a loop.
+
+  ```js
+  // for (initialization; condition; afterthought) { statement }
+
+  for (let i = 0; i <= 5; i++) {
+    console.log(i);
+  }
+  ```
+
+- `while`
+
+  Creates a loop that executes a specified statement as long as a certain condition evaluates to true. This condition is evaluated before executing the statement.
+
+  ```js
+  let i = 0;
+  while (i < 5) {
+    i += 1; //so that it is not an infinite loop
+  }
+  ```
+
+  - Use the `break` statement to terminate a loop, switch, or in conjunction with a labeled statement.
+  - The `continue` statement can be used to restart a while, do-while, for, or label statement.
+
+- `do while`
+
+  The do...while statement creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated after executing the statement
+
+  ```js
+  let i = 0;
+  do {
+    i += 1; //so that it is not an infinite loop
+  } while (i > 10);
   ```
