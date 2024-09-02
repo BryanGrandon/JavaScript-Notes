@@ -23,7 +23,7 @@ JavaScript is an interpreted programming language used on the client-side (front
 - [Asynchronous JavaScript](#asynchronous-javascript)
 - [Classes](#classes)
 - [Generator](#generator)
-- [Regular Expressions](/docs/code/16-regular-expressions.md)
+- [Regular Expressions](#regular-expressions)
 - [Modules](/docs/code/17-modules.md)
 
 ## General information
@@ -301,3 +301,12 @@ function* generateSequence() {
   return 3;
 }
 ```
+
+## [Regular Expressions](/code/regular-expressions.js)
+
+Regular expressions are patterns used to match character combinations in strings. In JavaScript, regular expressions are also objects.
+
+- Assertions
+- Quantifiers
+- Character sets
+- Groups and Ranks
