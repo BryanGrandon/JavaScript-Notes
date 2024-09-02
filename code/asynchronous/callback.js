@@ -12,7 +12,7 @@ modify(names, (array) => {
 // asynchronous
 
 function modify2(array, callback) {
-  array.push("Andrés");
+  array.push("John");
   setTimeout(() => {
     callback(array);
   }, 3000);

@@ -20,7 +20,7 @@ JavaScript is an interpreted programming language used on the client-side (front
 - [Operator](#operator)
 - [Function](#function)
 - [Using (this) keyword](#using-this-keyword)
-- [Asynchronous JavaScript](/docs/code/13-asynchronous.md)
+- [Asynchronous JavaScript](#asynchronous-javascript)
 - [Classes](/docs/code/14-classes.md)
 - [Generator](/docs/code/15-generator.md)
 - [Regular Expressions](/docs/code/16-regular-expressions.md)
@@ -250,3 +250,28 @@ In JavaScript, the this keyword is a little different compared to other language
 - In anonymous function
 - In arrow function
 - Explicit binding
+
+## Asynchronous JavaScript
+
+Asynchronous programming is a technique that enables your program to start a potentially long-running task and still be able to be responsive to other events while that task runs, rather than having to wait until that task has finished.
+
+- The `setTimeout` runs a function after the specified period expires. Times are declared in milliseconds.
+  ```JS
+  // setTimeout (func|code, [delay], [arg1], [arg2], ...)
+  ```
+- The `setInterval` is similar to setTimeout, with one difference. Instead of executing the callback function once, it will execute it forever, at the specified time interval.
+  ```JS
+  // setInterval (func|code, [delay], [arg1], [arg2], ...)
+  ```
+
+### [Event Loop](/code/asynchronous/event-loop.js)
+
+JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks.
+
+- A [Callback](/code/asynchronous/callback.js) function is a function passed into another function as an argument,
+  which is then invoked inside the outer function to complete some kind of routine or action.
+
+- [Promises](/code/asynchronous/promise.js) are a much better way to work with asynchronous code in JavaScript than
+  the old and error-prone callback approach.
+
+- [Async / Await](/code/asynchronous/async-await.js) is a special syntax to work with promises in a more comfortable fashion. We use async keyword to declare a async function that return a Promise, and the await keyword makes a function wait for a Promise.
