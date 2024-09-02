@@ -26,7 +26,7 @@ const arrowFunction = (coffee = true) => {
 };
 arrowFunction();
 
-// IIFE
+// Immediately Invoked Function Expression
 
 (function () {
   console.log(`Hello`);

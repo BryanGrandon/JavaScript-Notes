@@ -18,7 +18,7 @@ JavaScript is an interpreted programming language used on the client-side (front
 - [Loops and Iterations.](#loops-and-interactions)
 - [Control flow](#control-flow)
 - [Operator](#operator)
-- [Function](/docs/code/10-function.md)
+- [Function](#function)
 - [Using (this) keyword](/docs/code/12-using-this-keyword.md)
 - [Asynchronous JavaScript](/docs/code/13-asynchronous.md)
 - [Classes](/docs/code/14-classes.md)
@@ -222,3 +222,48 @@ Operators allow you to manipulate the value of variables, perform mathematical o
 - [Logical operator.](/code/operator/logical.js)
   - or , and , not , default value.
 - [Ternary operator.](/code/operator/ternary.js)
+
+## [Function](/code/function/function.js)
+
+Functions exist so that we can reuse code. They are blocks of code that are executed each time they are invoked. Each function is usually written to perform a specific task.
+
+```js
+function isFunction() {}
+```
+
+- Function expressions
+  ```js
+  const anonymousFunction = function () {};
+  ```
+- Arrow Function
+  ```js
+  const arrowFunction = () => {};
+  ```
+- Immediately Invoked Function Expression
+  ```js
+  (function () {})();
+  ```
+
+### [Scope and Function stack](/code/function/scope-and-function-stack.js)
+
+A space or environment in which a particular variable or function can be accessed or used. Accessibility of this variable or function depends on where it is defined.
+
+- The closures is when we call a function within another function.
+  ```js
+  function displayName() {}
+  function init() {
+    displayName();
+  }
+  ```
+- The lexical scope is when you declare a function inside another function and call it.
+  ```js
+  function lexical() {
+    function scoping() {}
+  }
+  ```
+- The recursion is when the function is able to call itself.
+  ```js
+  function recursion() {
+    recursion();
+  }
+  ```
