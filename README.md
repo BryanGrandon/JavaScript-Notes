@@ -2,13 +2,8 @@
 
 JavaScript is an interpreted programming language used on the client-side (front-end) to provide dynamic and interactive enhancements to web pages.
 
-- [DOM Manipulation](/docs/dom.md)
-
-  The Document Object Model (DOM) is a programming interface built for HTML and XML documents. It represents the page that allows programs and scripts to dynamically update the document structure, content, and style.
-
-- [APIs](/docs/api.md)
-
-  API is a piece of code that allows different applications to communicate with each other and share information and functionality.
+- [The Document Object Model (DOM)](/docs/dom.md) is a programming interface built for HTML and XML documents. It represents the page that allows programs and scripts to dynamically update the document structure, content, and style.
+- [APIs](/docs/api.md) is a piece of code that allows different applications to communicate with each other and share information and functionality.
 
 ## Table of content
 
@@ -28,21 +23,15 @@ JavaScript is an interpreted programming language used on the client-side (front
 
 ## General information
 
-### All about variables
+### All about variables.
 
 The variable is the way to store a value so that it can be reused, updated or simply registered. To declare a variable in JavaScript you can use `var`, `let` and `const`.
 
-<dl>
-  <dt>Hoisting</dt>
-  <dd>
-    Hoisting is a behavior in JavaScript in which variable and function declarations are moved to the beginning of the scope they are in.
-  </dd>
-</dl>
+- Hoisting is a behavior in JavaScript in which variable and function declarations are moved to the beginning of the scope they are in.
 
-### Equality comparisons
+### Equality comparisons.
 
-Comparison operators are used in logical statements to determine equality or
-difference between variables or values. Is Loosely Equal ( `==` ), is Strictly Equal ( `===` ), same Value ( `Object.is()` ).
+Comparison operators are used in logical statements to determine equality or difference between variables or values. Is Loosely Equal ( `==` ), is Strictly Equal ( `===` ), same Value ( `Object.is()` ).
 
 ```js
 let looselyEqual = 2 == "2"; // true
@@ -50,13 +39,9 @@ let strictlyEqual = 2 === "2"; // false
 let sameValue = ; Object.is(2, 2) // true
 ```
 
-### Strict mode
+### Strict mode.
 
-Strict mode applies to an entire script or to individual functions. To invoke strict mode on a
-whole script, type exactly `"use strict";` before any other expression.
-
-It enforces stricter parsing and error handling on the code at runtime. It also helps you write
-cleaner code and catch errors and bugs that might otherwise go unnoticed.
+Strict mode applies to an entire script or to individual functions. To invoke strict mode on a complete script, type exactly `use strict;` before any other expression. Strict mode imposes stricter error handling and analysis on the code at runtime.
 
 ```JS
 "use strict";
