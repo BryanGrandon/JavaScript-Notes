@@ -21,7 +21,7 @@ JavaScript is an interpreted programming language used on the client-side (front
 - [Function](#function)
 - [Using (this) keyword](#using-this-keyword)
 - [Asynchronous JavaScript](#asynchronous-javascript)
-- [Classes](/docs/code/14-classes.md)
+- [Classes](#classes)
 - [Generator](/docs/code/15-generator.md)
 - [Regular Expressions](/docs/code/16-regular-expressions.md)
 - [Modules](/docs/code/17-modules.md)
@@ -275,3 +275,16 @@ JavaScript has a runtime model based on an event loop, which is responsible for 
   the old and error-prone callback approach.
 
 - [Async / Await](/code/asynchronous/async-await.js) is a special syntax to work with promises in a more comfortable fashion. We use async keyword to declare a async function that return a Promise, and the await keyword makes a function wait for a Promise.
+
+## [Classes](/code/classes/classes.js)
+
+Classes are a template for creating objects. They encapsulate data with code to work on that data.
+
+- In programming, [inheritance](/code/classes/inheritance.js) refers to passing down characteristics from a parent to a child so that a new piece of code can reuse and build upon the features of an existing one.
+
+- [Additional](/code/classes/additional.js)
+
+  - Protected properties are usually prefixed with the underscore \_.
+  - Privates should start with #. They are only accessible from inside the class.
+
+- [Prototypes](/code/classes/prototype.js) are the mechanism by which JavaScript objects inherit features from one another.
