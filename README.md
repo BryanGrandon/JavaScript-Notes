@@ -12,9 +12,9 @@ JavaScript is an interpreted programming language used on the client-side (front
 
 ## Table of content
 
-- [General Information](#general-information)
-- [Data Types](#data-type)
-- [Data Structure](/docs/code/data-structure.md)
+- [General Information.](#general-information)
+- [Data Types.](#data-type)
+- [Data Structure.](#data-structure)
 - [Loops and Iterations](/docs/code/07-loops-and-iterations.md)
 - [Control flow](/docs/code/08-control-flow.md)
 - [Operator](/docs/code/09-operator.md)
@@ -26,7 +26,7 @@ JavaScript is an interpreted programming language used on the client-side (front
 - [Regular Expressions](/docs/code/16-regular-expressions.md)
 - [Modules](/docs/code/17-modules.md)
 
-## General Information
+## General information
 
 ### All about variables
 
@@ -95,10 +95,45 @@ JavaScript provides different data types to hold different types of values. Ther
    - [Date.](/code/data-types/build-in/date.js)
    - [Math.](/code/data-types/build-in/math.js)
 
-### [Type Conversion](/code/data-types/type-conversion.js)
+### [Type conversion](/code/data-types/type-conversion.js)
 
 Type conversion means the transfer of data from one data type to another.
 
 - Explicit type casting
 - Implicit Type Casting
 - Type Conversions
+
+## Data structure
+
+In computer science, a data structure is a format to organize, manage and store data in a way that allows efficient access and modification.
+
+- [Array](/code/data-structure/array.js)
+
+  The Array it stores multiple values and elements in one variable.
+
+  ```js
+  let arr = ["Element 1", "Element 2", "Element 3"];
+  ```
+
+- [Keyed collection](/code/data-structure/keyed-collection.js)
+
+  Keyed Collection are data collections that are ordered by key not index.
+
+  ```js
+  let map = new map();
+  let set = new set();
+  ```
+
+- [JavaScript object notion (JSON)](/code/data-structure/json.js)
+
+  JSON is a lightweight data interchange format, easy to read, write and parse for users and generate for machines.
+
+  ```json
+  {
+    "name": "Bryan",
+    "age": 21,
+    "isAdmin": false,
+    "courses": ["html", "css", "js"],
+    "something": "undefined"
+  }
+  ```
