@@ -7,25 +7,61 @@ JavaScript is an interpreted programming language used on the client-side (front
 
 ## Table of content.
 
+- [Important.](#important)
+- [Data Type.](#data-type)
+- [Data Structure.](#data-structure)
+- [Loops and Interactions.](#loops-and-interactions)
+- [Control Flow](#control-flow)
+- [Operator](#operator)
+- [Function](#function)
+- [Using (this) keyword](#using-this-keyword)
+- [Asynchronous JavaScript](#asynchronous-javascript)
+- [Classes](#classes)
+- [Generator](#generator)
+- [Modules](#modules)
+
 ## Important
 
-- Strict mode.
+### Strict mode.
 
-  Strict mode applies to an entire script or to individual functions. To invoke strict mode on a complete script, type exactly `use strict;` before any other expression. Strict mode imposes stricter error handling and analysis on the code at runtime.
+Strict mode applies to an entire script or to individual functions. To invoke strict mode on a complete script, type exactly `use strict;` before any other expression. Strict mode imposes stricter error handling and analysis on the code at runtime.
 
-  ```JS
-  "use strict";
-  // code
-  ```
+```JS
+"use strict";
+// code
+```
 
 ## Data Type.
 
 JavaScript provides different data types to hold different types of values. There are two types of data types in JavaScript.
 
-1. [Primitive data types]()
-2. [Non-primitive data type (object)]()
+### [Primitive data types](/code/data-type-primitive.js)
 
-## Data Structure.
+All types except Object define immutable values represented directly at the lowest level of the language. We refer to values of these types as primitive values.
+
+- String.
+- Number.
+- Boolean.
+- Null.
+- Undefined.
+- Symbol.
+
+### Non-primitive data type (object)
+
+Non-primitive data types store a reference in memory to the value or object, unlike primitives, which store the value directly.
+
+- Object.
+- Array.
+- Maps / WeakMaps.
+- Sets / WeakSets.
+
+### [Extra](/code/data-type-extra.js)
+
+- Date.
+- Math.
+- Console.
+
+## [Data Structure.](/code/data-structure.js)
 
 In computer science, a data structure is a format to organize, manage and store data in a way that allows efficient access and modification.
 
