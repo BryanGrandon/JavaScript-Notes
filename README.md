@@ -26,11 +26,6 @@ JavaScript is an interpreted programming language used on the client-side (front
 
 Strict mode applies to an entire script or to individual functions. To invoke strict mode on a complete script, type exactly `use strict;` before any other expression. Strict mode imposes stricter error handling and analysis on the code at runtime.
 
-```JS
-"use strict";
-// code
-```
-
 ## Data Type.
 
 JavaScript provides different data types to hold different types of values. There are two types of data types in JavaScript.
@@ -94,7 +89,7 @@ The code in the `try` block is executed first, and if it throws an exception, th
 
 - Proxies.
 
-## Operator.
+## [Operator.](/code/operator.js)
 
 Operators allow you to manipulate the value of variables, perform mathematical operations with their values and compare different variables.
 
@@ -109,7 +104,7 @@ Functions exist so that we can reuse code. They are blocks of code that are exec
 
 - Function expressions.
 - Arrow Function.
-- Immediately Invoked Function Expression.
+- Immediately Invoked Function Expression. `(function(){})()`
 
 ### Scope and Function Stack.
 
@@ -119,7 +114,7 @@ A space or environment in which a particular variable or function can be accesse
 - The `lexical scope` is when you declare a function inside another function and call it.
 - The `recursion` is when the function is able to call itself.
 
-## Using (this) keyword
+## [Using (this) keyword](/code/using-this-keyword.js)
 
 In JavaScript, the this keyword is a little different compared to other languages. It refers to an object, but it depends on how or where it is being invoked. It also has some differences strict mode and non-strict mode.
 
@@ -150,7 +145,7 @@ Classes are a template for creating objects. They encapsulate data with code to 
 - Additional.
 - Prototypes.
 
-## Generator.
+## [Generator.](/code/generator.js)
 
 Iterators are objects, governed by the iterator protocol, that allow us to easily iterate
 over a given sequence in a variety of ways, such as using the for...of loop.
